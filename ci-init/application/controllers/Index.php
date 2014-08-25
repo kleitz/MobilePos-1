@@ -39,3 +39,6 @@ class Index extends CI_Controller {
 		$this->load->view('show_cd/item', $data);	
 		
 	}
+	
+	
+	}
