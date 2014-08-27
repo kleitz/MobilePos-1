@@ -3,21 +3,18 @@
 class Index extends CI_Controller {
 
 		
-		public function dft($page=false,$data=false){
+		public function dft($modul='home',$cdata=false){
 		
-		if ( ! file_exists(APPPATH.'views/home'.$page))
-		  {
-		    // 页面不存在
-		    echo APPPATH.'views/pages'.$page;
+	
+		    if( ! is_dir(APPPATH.'views/'.$modul) ) {
 
-		      show_404();
-		  }
-		
-		  $cdata = $this->session->userdata('cdata');
-		if( ! empty($cdata)){
+		    	show_404();
+		    		
 
+		    }
 
-			$cdata = array(
+			
+			$cmoo_id = array(
 
 					'customers' => array(
 
@@ -51,14 +48,40 @@ class Index extends CI_Controller {
 				);
 
 
-			$this->session->set_session;
-		}
- 
-		 $this->load->view('header/header');
-	     $this->load->view('home'.$page,$data);
+			$this->session->set_userdata($cmoo_id);
+			$this->session->keep_flashdata('session_id');
+
+ 				
+ 			//$sess = $this->session->all_userdata();
+ 			//$this->session->unset_userdata('user_data');
+ 			//var_dump($sess);
+		    //$this->load->view('header/header');
+	        //$this->load->view($modul.'/'.$modul,$cdata);
 
 	 }
 	
+	
+
+
+
+
+	 		public function encryfc(){
+
+	 		
+	 		var_dump($this->session->userdata('customers'));
+
+	 			 
+			
+
+
+	 			$msg = 'My secret message';
+				$key = 'super-secret-key';
+
+		  var_dump($encrypted_string = $this->encrypt->encode($msg));
+		  var_dump($encrypt_str = $this->encrypt->decode($encrypted_string));
+
+
+	 		}
 	}
 
 
