@@ -225,9 +225,8 @@ $config['cache_path'] = '';
 |
 */
 
-$msg = 'My secret message';
-$key = 'super-secret-key';
-$config['encryption_key'] = $key;
+
+$config['encryption_key'] = MCRYPT_MODE_CBC;
 
 /*
 |--------------------------------------------------------------------------

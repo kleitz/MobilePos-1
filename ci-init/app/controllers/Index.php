@@ -2,22 +2,29 @@
 
 class Index extends CI_Controller {
 
-		
-		public function dft($page=false,$data=false){
-		
-		if ( ! file_exists(APPPATH.'views/home'.$page))
+		// dft  =  default .   应用默认的模块, 'home' 主页 .  当url中没有任何传参时 , 默认进入主页
+
+	    //  dft方法是各个模块首页展示的路由器
+
+		public function dft($modul='home',$data=false){
+
+
+		if ( ! is_dir(APPPATH.'views/'.$modul))
+		  
 		  {
-		    // 页面不存在
-		    echo APPPATH.'views/pages'.$page;
+		    // 模块不存在
+		  
 
 		      show_404();
 		  }
 		
-		  $cdata = $this->session->userdata('cdata');
-		if( ! empty($cdata)){
+		 
+		  //  检测会话.  当前会话为true时重新加载一个会话
+		
+		if( $this->session->userdata('stus')){
 
 
-			$cdata = array(
+			$cmoo_id = array(
 
 					'customers' => array(
 
@@ -46,16 +53,18 @@ class Index extends CI_Controller {
 
 
 
-									)	
+									),
+
+				     'stus'  =>  false  ,
 
 				);
 
-
-			$this->session->set_session;
+			$this->session->unset_userdata();
+			$this->session->set_userdata($cmoo_id);
 		}
  
 		 $this->load->view('header/header');
-	     $this->load->view('home'.$page,$data);
+	     $this->load->view($modul.'/'.$modul,$data);
 
 	 }
 	
