@@ -19,6 +19,10 @@
  *
  */
 	define('ENVIRONMENT', 'development');
+	date_default_timezone_set('Asia/Shanghai'); 
+	define ('TODAY_CD', 'order_cd'.date('_Y_m_d',time()));
+	define ('YTODAY_CD','order_cd'.date('_Y_m_d',time()-84600));
+	
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -56,7 +60,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-	$system_path = 'system';
+	$system_path = './ci-init/system';
 
 /*
  *---------------------------------------------------------------
@@ -72,7 +76,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$application_folder = 'application';
+	$application_folder = './ci-init/app';
 
 /*
  * --------------------------------------------------------------------
