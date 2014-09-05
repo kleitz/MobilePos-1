@@ -19,6 +19,9 @@
  *
  */
 	define('ENVIRONMENT', 'development');
+	date_default_timezone_set('Asia/Shanghai');
+	
+	 
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -56,7 +59,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-	$system_path = 'system';
+	$system_path = './index/system';
 
 /*
  *---------------------------------------------------------------
@@ -72,7 +75,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$application_folder = 'application';
+	$application_folder = './index/app';
 
 /*
  * --------------------------------------------------------------------

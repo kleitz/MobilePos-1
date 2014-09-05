@@ -1,0 +1,106 @@
+
+
+ul.uk-list.uk-list-line.uk-list-space.uk-text-bold.uk-text-middle.uk-text-center
+{
+
+	padding:20px;
+	margin-left: 60px;
+	padding-left: 0;
+	
+
+}
+
+a.uk-button.uk-icon.uk-icon-search
+{
+padding: 5px;
+
+}
+
+li.uk-width-1-1.uk-grid.uk-grid-preserve
+
+{
+	padding: 12px;
+	padding-top: 15px;
+	box-shadow: 1px 1px 4px rgba(153,153,153,0.63);
+	margin-bottom: 8px;
+	border-radius: 8px;
+	background: rgba(242,242,242,0.13);
+	margin-top: 10px;
+	border: 1px solid rgba(225,225,225,0.31);
+
+}
+
+div.uk-panel-box-success
+{
+
+    
+	box-shadow: 1px 1px 4px rgba(153,153,153,0.63);
+	border-radius: 8px;
+	background: rgba(242,242,242,0.13);
+    border: 1px solid rgba(19,248,23,0.34);
+    padding:10px 0 10px 50px;
+    margin:0 25px 15px -25px;
+
+
+
+}
+
+a.uk-float-left.uk-close
+{
+
+	margin-left: 20px;
+	
+}
+
+b.uk-badge.uk-badge-success.uk-badge-notification.uk-float-right h4
+{
+
+margin:0;
+padding:2px;
+color:#fff;
+
+}
+
+
+ul.uk-navbar-content
+{
+	margin-top: 15px;
+
+}
+
+
+nav.uk-navbar
+{
+
+	background: rgba(242,242,242,0.13);
+}
+
+
+e.uk-width-1-3
+{
+padding-left:0; 
+}
+
+
+
+span.uk-badge.uk-width-1-3
+{
+
+padding:2px;
+margin: 1px;
+}
+
+ul.uk-navbar-content.uk-float-right
+{
+
+margin: 0;
+margin-top: 15px;
+
+}
+
+a.uk-button.uk-icon
+{
+padding:10px;
+margin:10px;
+}
+
