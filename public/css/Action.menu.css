@@ -1,4 +1,9 @@
 
+body{
+	
+	background: rgba(238,238,238,1);
+	
+}
 
 ul.uk-list.uk-list-line.uk-list-space.uk-text-bold.uk-text-middle.uk-text-center
 {
@@ -16,7 +21,7 @@ padding: 5px;
 
 }
 
-li.uk-width-1-1.uk-grid.uk-grid-preserve
+li.menu-item
 
 {
 	padding: 12px;
@@ -30,7 +35,7 @@ li.uk-width-1-1.uk-grid.uk-grid-preserve
 
 }
 
-div.uk-panel-box-success
+li.uk-panel-box-success.uk-width-1-1.uk-grid.uk-grid-preserve.menu-item
 {
 
     
@@ -38,7 +43,7 @@ div.uk-panel-box-success
 	border-radius: 8px;
 	background: rgba(242,242,242,0.13);
     border: 1px solid rgba(19,248,23,0.34);
-    padding:10px 0 10px 50px;
+    padding:10px 15px 10px 50px;
     margin:0 25px 15px -25px;
 
 
@@ -103,4 +108,12 @@ a.uk-button.uk-icon
 padding:10px;
 margin:10px;
 }
+
+table.uk-table
+{
+padding:20px;
+
+}
+
+
 

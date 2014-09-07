@@ -1,54 +1,75 @@
+
 $('Document').ready(function(){
-	
+			var TouchObj =  document.getElementsByTagName('val');
+			console.log(TouchObj);
 			
-			var menu_data = Object;
-	   	
-	$("li.menu-item").on('click',function(Event){
-	
-			event.stopPropagation();
-			var wrapli = $(this);
-			var wrapdiv = $(this).closest('div');
-			if(wrapdiv.hasClass('uk-panel-box-success')){
-				var sl = parseInt(wrapdiv.find('val.sl').text());
-				  	
-					 wrapdiv.find('val.sl').text(sl+1); 
-				
-			}else{
-				
-				wrapli.fadeIn("fast",function(){
-					
-					event.stopPropagation();
-					$(this).wrap("<div class='uk-panel-box-success'></div>").append("<span class='uk-badge uk-width-1-3'>已选<val class='sl'>1</val>份</span>");
-				wrapli.before("<a id='box-succ-close' class='uk-float-right uk-close uk-close-alt'></a>");	
-					
-					
-				});
-				
-							
-				
-				
-				
-				
+			var Marra = new Array;
 			
-			}
+			var menu_data ={ demo : '1' } ;
+										
 		
-			$('#box-succ-close').click(function(event){
+	   	
+	 $("li.menu-item").on('click',menu_data,function(e){
+	 
+
+	 		if($(this).hasClass('uk-panel-box-success')){
+		 	var sl = parseInt($(this).find('val.sl').text());  
+		 	e.data.value.sl = sl+1;	
+		 	$(this).find('val.sl').text(sl+1);	
+		 			
+		  		
+	 		}else{
+	 		
+	 			e.data.Domli = $(e.currentTarget).clone(true);	
+			   $(e.currentTarget).addClass('uk-panel-box-success').append("<span class='uk-badge uk-width-1-3'>已选<val class='sl'>1</val>份</span>").prepend("<a  class='uk-float-left uk-close uk-close-alt'></a>").find('img.uk-thumbnail').hide('fast');
+			    e.data.value = {dish : e.currentTarget.value , sl : 1};
+			  
+						 			  
 				
-				event.stopPropagation();
-				$(this).next('li.menu-item').unwrap().find('span.uk-badge').detach();
-				$(this).detach();
+				}	
 				
+			
+				//$('uk-close-alt').delegate(
+				
+				if($(e.target).hasClass('uk-close-alt')){
+				 
+				 	$(e.data.Domli).fadeIn('fast','linear').replaceAll($(e.currentTarget));
+				
+					}
+					
+		
+					//}	
+					
+				 
+				
+				 Marra.push(e.data.value);
+				//console.log(Marra);		
+				
+				
+		});
+				
+				
+				
+				
+				
+				
+				
+				
+				/*var sl = parseInt($(this).find('val.sl').text());  	
+				$(this).find('val.sl').text(sl+1);		
+						
+			$(this).addClass('uk-panel-box-success').prepend("<span class='uk-badge uk-width-1-3'>已选<val class='sl'>1</val>份</span><a id='box-succ-close' class='uk-float-right uk-close uk-close-alt'></a>");
+			
+			*/
+			
+			 
 	
-			});
-				
-					
-					
-	});
 	
 	
 	
 			
-	  $("a[href='#print-modal-a']").on('click',function(e){
+	  $("a[href='#print-modal']").on('click',function(e){
+	  		$(this).css('width','200px');
 		  
 		  	e.stopPropagation();
 		  	
@@ -59,7 +80,7 @@ $('Document').ready(function(){
 				
 		  	if ( modal.isActive() ) {
 		  		
-		  		table.replaceAll('table.uk-table');
+		  		//table.replaceAll('table.uk-table');
 			  	modal.hide();
 			  	
 			  	
