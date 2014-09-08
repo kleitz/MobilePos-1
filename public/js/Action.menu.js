@@ -28,13 +28,25 @@ $('Document').ready(function(){
 				$(e.currentTarget).replaceWith($(this).data());		       
 				}
 		
+		
+						
+		
 		});
+		
+		
+		$('button.uk-icon-check-square-o').click(function(e){
+					
+					
+					console.log();
+					
+					
+				});
+
 				
 				
 			
 	 
-
-
+			
 
 	
 
