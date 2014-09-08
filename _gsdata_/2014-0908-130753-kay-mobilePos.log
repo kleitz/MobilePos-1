@@ -1,0 +1,12 @@
+2014-09-08 13:07:53: ----- ：任务 'mobilePos'：计算机 'kay' 上的分析操作已由 On File Change Incremental 所启动 (GoodSync v 4.0.0.0) -----
+2014-09-08 13:07:53: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos, WaitForLocksMinutes=20, UberUnlockedUpload, ResolveConflicts=RightToLeft
+2014-09-08 13:07:53: Change in: /Users/liukai/Code/www/MobilePos-remote/index/app/views/action/menu/menu.php
+2014-09-08 13:07:53: 变更：1， 冲突：0， 复制时间：0， 复制状态：0/0， 错误： 0
+2014-09-08 13:07:53: Left to Right: Copy File: 1 
+2014-09-08 13:07:53: ----- ：分析已结束。 历时 00:00:00， 速度： Many 个文件/秒 -----
+2014-09-08 13:07:53: ===== ：任务 'mobilePos'：同步已被 On File Change Incremental 所启动，位于计算机 'kay' =====
+2014-09-08 13:07:53: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos, WaitForLocksMinutes=20, UberUnlockedUpload, ResolveConflicts=RightToLeft
+2014-09-08 13:07:53: 覆盖复制 '/Users/liukai/Code/www/MobilePos-remote/index/app/views/action/menu/menu.php' -> '/Users/liukai/Code/www/MobilePos/index/app/views/action/menu/menu.php'
+2014-09-08 13:07:53: 项目同步未必： 1，错误： 0
+2014-09-08 13:07:53: ===== ：同步完毕。时间：00:00:00，速度： 1131/s (141K/s) =====
+2014-09-08 13:07:53: 

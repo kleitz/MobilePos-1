@@ -1,0 +1,27 @@
+2014-09-08 02:37:32: ----- ：任务 '新建任务'：计算机 'kay' 上的分析操作已由 User 所启动 (GoodSync v 4.0.0.0) -----
+2014-09-08 02:37:32: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos
+2014-09-08 02:37:33: 左侧: State file does not exist: /Users/liukai/Code/www/MobilePos-remote/_gsdata_/_file_state._gs
+2014-09-08 02:37:33: 左侧: 未发现状态文件，新建状态文件
+2014-09-08 02:37:33: 左侧：文件： 267 (已排除 16)。文件夹： 63 (已排除 1)。 /dev/disk0s2 HFS, 可用空间：10791M，总计空间：120473M
+2014-09-08 02:37:33: 右侧: State file does not exist: /Users/liukai/Code/www/MobilePos/_gsdata_/_file_state._gs
+2014-09-08 02:37:33: 右侧: 未发现状态文件，新建状态文件
+2014-09-08 02:37:33: 右侧：文件： 267 (已排除 16)。文件夹： 63 (已排除 1)。 /dev/disk0s2 HFS, 可用空间：10791M，总计空间：120473M
+2014-09-08 02:37:33: /public/js/Action.menu.js: 冲突: 新文件有变化
+2014-09-08 02:37:33: 分析完毕并发现冲突情况。如需解决冲突请选择正常的同步方向。
+2014-09-08 02:37:33: 变更：1， 冲突：1， 复制时间：0， 复制状态：0/329， 错误： 0
+2014-09-08 02:37:33: ----- ：分析已结束。 历时 00:00:01， 速度： 347 个文件/秒 -----
+2014-09-08 02:37:33: 
+2014-09-08 02:40:05: New _gsdata_ folder(s) created, so rescan all job folders for their ghosts
+2014-09-08 02:40:05: ===== ：任务 '新建任务'：同步已被 User 所启动，位于计算机 'kay' =====
+2014-09-08 02:40:05: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos
+2014-09-08 02:40:05: /public/js/Action.menu.js: unresolved conflict results in No Copy
+2014-09-08 02:40:05: 同步完成，未解决的冲突数为 1 。点击冲突按钮即可查看未解决的冲突情况。
+2014-09-08 02:40:05: 项目同步未必： 329，错误： 0
+2014-09-08 02:40:05: ===== ：同步完毕。时间：00:00:00，速度：  =====
+2014-09-08 02:40:05: 
+2014-09-08 02:41:15: ===== ：任务 '新建任务'：同步已被 User 所启动，位于计算机 'kay' =====
+2014-09-08 02:41:15: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos
+2014-09-08 02:41:15: 覆盖复制 '/Users/liukai/Code/www/MobilePos/public/js/Action.menu.js' -> '/Users/liukai/Code/www/MobilePos-remote/public/js/Action.menu.js' (User Action)
+2014-09-08 02:41:15: 项目同步未必： 1，错误： 0
+2014-09-08 02:41:15: ===== ：同步完毕。时间：00:00:00，速度：  =====
+2014-09-08 02:41:15: 
