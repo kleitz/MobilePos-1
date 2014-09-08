@@ -1,0 +1,39 @@
+2014-09-08 17:39:47: ----- ：任务 'mobilePos'：计算机 'kay' 上的分析操作已由 On File Change Incremental 所启动 (GoodSync v 4.0.0.0) -----
+2014-09-08 17:39:47: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos, WaitForLocksMinutes=20, UberUnlockedUpload, ResolveConflicts=RightToLeft
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/logs/refs/heads/vs1
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/35/6be969da4517dcb61960f8359e904dff4c55b6
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/08
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/refs/heads/vs1
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/logs/HEAD
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/78/tmp_obj_aC8zsc
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/index.lock
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/index
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/78/df95ca2a9f6c0a8b642dbe70ab4a8f0393bfb7
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/08/tmp_obj_BRVrhc
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/cb/tmp_obj_a2J6ec
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/refs/heads/vs1.lock
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/08/c353b72d3c0bab6302e8260654020c06fbe6bb
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/92/tmp_obj_ameRhc
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/35/tmp_obj_trYY6b
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/54/af9047c542c7c9b59626d86fde3c5ebb057590
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/54/tmp_obj_RPYn5b
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/92/97ff0ed0b8d9c452af4332e063f1e88717b4fa
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/cb/7b5a38ebb2d6c88edaefe322121bd534e56308
+2014-09-08 17:39:47: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/COMMIT_EDITMSG
+2014-09-08 17:39:47: 变更：8， 冲突：0， 复制时间：0， 复制状态：0/4， 错误： 0
+2014-09-08 17:39:47: Left to Right: Copy File: 8 
+2014-09-08 17:39:47: ----- ：分析已结束。 历时 00:00:00， 速度： Many 个文件/秒 -----
+2014-09-08 17:39:47: ===== ：任务 'mobilePos'：同步已被 On File Change Incremental 所启动，位于计算机 'kay' =====
+2014-09-08 17:39:47: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos, WaitForLocksMinutes=20, UberUnlockedUpload, ResolveConflicts=RightToLeft
+2014-09-08 17:39:47: 创建文件夹 '/Users/liukai/Code/www/MobilePos/.git/objects/08'
+- 错误: Cannot create folder: cannot make folder /Users/liukai/Code/www/MobilePos/.git/objects/08: File exists (error 17)
+2014-09-08 17:39:47: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/index' -> '/Users/liukai/Code/www/MobilePos/.git/index'
+2014-09-08 17:39:47: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/objects/35/6be969da4517dcb61960f8359e904dff4c55b6' -> '/Users/liukai/Code/www/MobilePos/.git/objects/35/6be969da4517dcb61960f8359e904dff4c55b6'
+2014-09-08 17:39:47: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/objects/54/af9047c542c7c9b59626d86fde3c5ebb057590' -> '/Users/liukai/Code/www/MobilePos/.git/objects/54/af9047c542c7c9b59626d86fde3c5ebb057590'
+2014-09-08 17:39:47: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/objects/78/df95ca2a9f6c0a8b642dbe70ab4a8f0393bfb7' -> '/Users/liukai/Code/www/MobilePos/.git/objects/78/df95ca2a9f6c0a8b642dbe70ab4a8f0393bfb7'
+2014-09-08 17:39:47: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/objects/92/97ff0ed0b8d9c452af4332e063f1e88717b4fa' -> '/Users/liukai/Code/www/MobilePos/.git/objects/92/97ff0ed0b8d9c452af4332e063f1e88717b4fa'
+2014-09-08 17:39:47: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/objects/cb/7b5a38ebb2d6c88edaefe322121bd534e56308' -> '/Users/liukai/Code/www/MobilePos/.git/objects/cb/7b5a38ebb2d6c88edaefe322121bd534e56308'
+2014-09-08 17:39:47: 同步完成，错误数为 1 。点击错误按钮即可查看同步错误情况。
+2014-09-08 17:39:47: 项目同步未必： 10，错误： 1
+2014-09-08 17:39:47: ===== ：同步完毕。时间：00:00:00，速度： 707/s (54K/s) =====
+2014-09-08 17:39:47: 
