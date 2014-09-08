@@ -30,13 +30,13 @@
   <?php foreach($list as $li): ?>  		 
       <li class="menu-item uk-width-1 uk-grid uk-grid-preserve " value="<?php echo $li['dishid'] ?>">
       	
-      	<span type="button" class="uk-float-left clearItem uk-badge uk-badge-danger uk-badge-notification uk-icon uk-icon-minus uk-icon-medium uk-button" style="display : none"></span>
+      	<span type="button" class="clearItem uk-badge uk-badge-danger uk-badge-notification uk-icon uk-icon-minus uk-icon-medium uk-button" style="display : none"></span>
       		  	
-	  	<p class="uk-width-1-2 " ><val class="cm" ><?php echo $li['cm'] ?></val></p>
+	  	<p class="uk-width-medium-1-2" ><val class="cm" ><?php echo $li['cm'] ?></val></p>
 	    
-	    <p class="uk-width-1-2" style="display:none"><val class="sl uk-badge uk-badge-notification">已选1份<val></p>
+	    <b class="uk-badge uk-badge-notification uk-width-medium-2-10 " style="display:none">已选<val class="sl">1</val>份</b>
 	  	
-	  	<val class="uk-width-2-10 jg uk-badge uk-badge-success uk-badge-notification uk-icon-jpy uk-float-right"><?php echo $li['jg'] ?></val>
+	  	<val class="uk-width-medium-1-10 jg uk-badge uk-badge-success uk-badge-notification uk-icon-jpy uk-float-right"><?php echo $li['jg'] ?></val>
 	  	
 	   </li>
       

@@ -7,14 +7,16 @@ $('Document').ready(function(){
 
 	 		if($(e.currentTarget).hasClass('uk-li-success')){
 		 	
-		 		$(e.currentTarget).find('val.sl').text(parseInt($(e.currentTarget).find('val.sl').text())+1); 		 	
+		 		$(e.currentTarget).find('val.sl').text(function(n,h){
+			 		  return ++h;			 		
+		 		});
 	 		
 	 		}else{
 	 		
 	 		
 		 		$(this).data($(e.currentTarget).clone(true)) ;
 			
-		 			$(e.currentTarget).children(':hidden').show('fast');
+		 		$(e.currentTarget).children(':hidden').show('fast').end().addClass('uk-li-success');
 		
 			 	
 				}	
@@ -22,11 +24,9 @@ $('Document').ready(function(){
 			
 							
 				if($(e.target).hasClass('clearItem')){
-				 	
-				$($(this).data()).show().replaceAll(e.currentTarget);
-				
-				
-		       }
+				 				
+				$(e.currentTarget).replaceWith($(this).data());		       
+				}
 		
 		});
 				

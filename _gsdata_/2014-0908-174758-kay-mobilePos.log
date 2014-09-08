@@ -1,0 +1,20 @@
+2014-09-08 17:47:58: ----- ：任务 'mobilePos'：计算机 'kay' 上的分析操作已由 On File Change Incremental 所启动 (GoodSync v 4.0.0.0) -----
+2014-09-08 17:47:58: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos, WaitForLocksMinutes=20, UberUnlockedUpload, ResolveConflicts=RightToLeft
+2014-09-08 17:47:58: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/92/38cd2e5e40479a4defb3d535b9936b39d70ad4
+2014-09-08 17:47:58: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/92/tmp_obj_x9fRk9
+2014-09-08 17:47:58: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/ed/314363dd8864975f4e7b9c8098f2924292fe3c
+2014-09-08 17:47:58: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/94/968a64b0ec6ab697a93a27ff0d33b755823a16
+2014-09-08 17:47:58: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/index.lock
+2014-09-08 17:47:58: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/ed/tmp_obj_VlOu29
+2014-09-08 17:47:58: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/index
+2014-09-08 17:47:58: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/94/tmp_obj_DEqJR9
+2014-09-08 17:47:58: 变更：2， 冲突：0， 复制时间：0， 复制状态：0/2， 错误： 0
+2014-09-08 17:47:58: Left to Right: Copy File: 2 
+2014-09-08 17:47:58: ----- ：分析已结束。 历时 00:00:00， 速度： Many 个文件/秒 -----
+2014-09-08 17:47:58: ===== ：任务 'mobilePos'：同步已被 On File Change Incremental 所启动，位于计算机 'kay' =====
+2014-09-08 17:47:58: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos, WaitForLocksMinutes=20, UberUnlockedUpload, ResolveConflicts=RightToLeft
+2014-09-08 17:47:58: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/objects/94/968a64b0ec6ab697a93a27ff0d33b755823a16' -> '/Users/liukai/Code/www/MobilePos/.git/objects/94/968a64b0ec6ab697a93a27ff0d33b755823a16'
+2014-09-08 17:47:58: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/objects/ed/314363dd8864975f4e7b9c8098f2924292fe3c' -> '/Users/liukai/Code/www/MobilePos/.git/objects/ed/314363dd8864975f4e7b9c8098f2924292fe3c'
+2014-09-08 17:47:58: 项目同步未必： 4，错误： 0
+2014-09-08 17:47:58: ===== ：同步完毕。时间：00:00:00，速度： 707/s (54K/s) =====
+2014-09-08 17:47:58: 

@@ -1,0 +1,28 @@
+2014-09-08 17:48:08: ----- ：任务 'mobilePos'：计算机 'kay' 上的分析操作已由 On File Change Incremental 所启动 (GoodSync v 4.0.0.0) -----
+2014-09-08 17:48:08: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos, WaitForLocksMinutes=20, UberUnlockedUpload, ResolveConflicts=RightToLeft
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/logs/refs/heads/vs1
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/refs/heads/vs1
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/logs/HEAD
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/ec/a68da47bebcb2431285e5a2a289f6763174d21
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/75/tmp_obj_y7rbz9
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/index.lock
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/75/3e51410be95fda34a3a2431c8dc367e18db7da
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/refs/heads/vs1.lock
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/3b/tmp_obj_afqlb9
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/COMMIT_EDITMSG
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/3b/d17ea275b672149eb3e6f4997e70426bd4831a
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos-remote/.git/objects/ec/tmp_obj_o022M9
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos/.git/objects/ed/314363dd8864975f4e7b9c8098f2924292fe3c
+2014-09-08 17:48:08: Change in: /Users/liukai/Code/www/MobilePos/.git/objects/94/968a64b0ec6ab697a93a27ff0d33b755823a16
+2014-09-08 17:48:08: 变更：4， 冲突：0， 复制时间：0， 复制状态：0/3， 错误： 0
+2014-09-08 17:48:08: Left to Right: Copy File: 4 
+2014-09-08 17:48:08: ----- ：分析已结束。 历时 00:00:00， 速度： Many 个文件/秒 -----
+2014-09-08 17:48:08: ===== ：任务 'mobilePos'：同步已被 On File Change Incremental 所启动，位于计算机 'kay' =====
+2014-09-08 17:48:08: /Users/liukai/Code/www/MobilePos-remote <-> /Users/liukai/Code/www/MobilePos, WaitForLocksMinutes=20, UberUnlockedUpload, ResolveConflicts=RightToLeft
+2014-09-08 17:48:08: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/COMMIT_EDITMSG' -> '/Users/liukai/Code/www/MobilePos/.git/COMMIT_EDITMSG'
+2014-09-08 17:48:08: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/objects/3b/d17ea275b672149eb3e6f4997e70426bd4831a' -> '/Users/liukai/Code/www/MobilePos/.git/objects/3b/d17ea275b672149eb3e6f4997e70426bd4831a'
+2014-09-08 17:48:08: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/objects/75/3e51410be95fda34a3a2431c8dc367e18db7da' -> '/Users/liukai/Code/www/MobilePos/.git/objects/75/3e51410be95fda34a3a2431c8dc367e18db7da'
+2014-09-08 17:48:08: 新建复制 '/Users/liukai/Code/www/MobilePos-remote/.git/objects/ec/a68da47bebcb2431285e5a2a289f6763174d21' -> '/Users/liukai/Code/www/MobilePos/.git/objects/ec/a68da47bebcb2431285e5a2a289f6763174d21'
+2014-09-08 17:48:08: 项目同步未必： 7，错误： 0
+2014-09-08 17:48:08: ===== ：同步完毕。时间：00:00:00，速度： 707/s (54K/s) =====
+2014-09-08 17:48:08: 
