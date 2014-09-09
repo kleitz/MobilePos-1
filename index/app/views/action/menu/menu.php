@@ -13,10 +13,10 @@
   
   <body >
   
- 	<nav class="uk-width-1" data-uk-sticky>
- 		<div class="uk-width-1 uk-grid uk-grid-preserve">
-	   <button  class="uk-width-1-2 uk-button uk-icon uk-icon-navicon uk-icon-large uk-text-left " data-uk-offcanvas="{target:'#menu-optclass'}"></button>
-	   <button  class="uk-width-1-2 uk-button uk-icon uk-icon-check-square-o uk-icon-large uk-text-right" data-uk-modal="{target:'#menu-print-modal'}"></button>  
+ 	<nav class="uk-width-1 uk-animation-slide-top">
+ 		<div class="uk-width-1 uk-grid uk-grid-preserve uk-animation-slide-top">
+	   <button  class="uk-width-1-2 uk-button uk-icon uk-icon-navicon uk-icon-large uk-text-left uk-animation-slide-top" data-uk-offcanvas="{target:'#menu-optclass'}"></button>
+	   <button  class="uk-width-1-2 uk-button uk-icon uk-icon-check-square-o uk-icon-large uk-text-right print-modalTarget uk-animation-slide-top" data-uk-modal="{target:'#menu-print-modal',bgclose:false}"></button>  
  		</div>
  	</nav>
 
@@ -25,18 +25,18 @@
   
 
  	<div class="uk-width-1 uk-container uk-container-center">  
-  <ul class="uk-width-1 uk-list uk-list-space uk-grid uk-grid-preserve uk-container uk-container-center">
+  <ul class="uk-width-1 uk-list uk-list-space uk-grid uk-grid-preserve uk-container uk-container-center uk-animation-scale-up">
 	  
   <?php foreach($list as $li): ?>  		 
-      <li class="menu-item uk-width-1 uk-grid uk-grid-preserve " value="<?php echo $li['dishid'] ?>">
+      <li class="menu-item uk-width-1 uk-grid uk-grid-preserve uk-text-bottom " value="<?php echo $li['dishid'] ?>">
       	
-      	<span type="button" class="clearItem uk-badge uk-badge-danger uk-badge-notification uk-icon uk-icon-minus uk-icon-medium uk-button" style="display : none"></span>
+      	<span type="button" class=" clearItem uk-badge uk-badge-danger uk-badge-notification uk-icon uk-icon-minus uk-icon-medium uk-button uk-animation-fade" style="display : none"></span>
       		  	
-	  	<p class="uk-width-medium-1-2" ><val class="cm" ><?php echo $li['cm'] ?></val></p>
+	  	<p class=" uk-width-medium-1-2" ><val class="cm" ><?php echo $li['cm'] ?></val></p>
 	    
-	    <b class="uk-text-truncate uk-badge uk-badge-notification uk-width-medium-2-10 " style="display:none">已选<val class="sl">1</val>份</b>
+	    <b class=" uk-badge uk-badge-notification uk-width-medium-2-10 uk-animation-fade" style="display:none">已选<val class="sl">1</val>份</b>
 	  	
-	  	<val class="uk-width-medium-1-10 jg uk-badge uk-badge-success uk-badge-notification uk-icon-jpy uk-float-right"><?php echo $li['jg'] ?></val>
+	  	<val class=" uk-width-medium-1-10 jg uk-badge uk-badge-success uk-badge-notification uk-icon-jpy uk-float-right"><?php echo $li['jg'] ?></val>
 	  	
 	   </li>
       
@@ -82,14 +82,21 @@
     </div>
   </div>
   	
-  	<div id="menu-print-modal" class="uk-modal">
-	    <div class="uk-modal-dialog uk-modal-dialog-large">
-	        <a class="uk-modal-close uk-close"></a>
-	        <h3 class="uk-header uk-text-bold uk-text-center-small">清单预览</h3>
-	    </div>
-	</div>
-  
-  
+  	
+  	
+  	
+  	<div id="menu-print-modal" class="uk-modal uk-container uk-container-center uk-width-1">
+	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless">
+	        <a class="uk-modal-close uk-close uk-close-alt print-modalTarget"></a>
+	        <h2 class="uk-heading uk-text-bold uk-text-center">清单预览</h2>
+	        <div class="uk-overflow-container">
+	        	<table class="uk-table uk-width-1 uk-container-center">
+	        		
+	        
+	        	</table>
+	        </div>
+		</div>
+  	</div>  
   	  
   </body>
   
