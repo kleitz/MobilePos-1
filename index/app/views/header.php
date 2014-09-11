@@ -6,6 +6,7 @@
     <meta name= "viewport" content= "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link type="image/ico" href="<?php echo base_url('/favicon.ico');?>" rel="shortcut icon">
 	<link rel="stylesheet" href="<?php echo base_url('public/css/uikit.min.css');?>" />
+	<link rel="stylesheet" href="<?php echo base_url('public/css/default.css');?>" />
 	<script src="<?php echo base_url('public/js/jquery-1.11.0.min.js');?>"></script>
 	<script src=" <?php echo base_url('public/js/uikit.min.js');?>"></script>
 	

@@ -1,42 +1,66 @@
 $('Document').ready(function(e){	
- 	
-	 
-	
-	$("li.menu-item").on('click',function(e){
-			 		
-	 		if($(e.currentTarget).parent().is('tr')){
-		 	
-		 		$(e.delegateTarget).children(':hidden').show().end().find('val.sl').text(function(){
-			 		
-			 		var sl = parseInt($(this).text());
+ 
+		 $.CreateMenu = ({
+		 
+		    'result' : function(){ data =  $('.menu-item') ; return data; },
+		
+	 	   'isActive' : function(){ data =  $(this).is('tr') ; return data; } ,
+	 	    
+	 	   'addSl' : function(e){
+	 	  
+	 	  $(e.currentTarget).find('.sl').text(function(){
+			 var sl = parseInt($(this).text());
 			 		return sl+1;
-		 		});	
+			 		});
+			 		
+			 		return e;
+			 		},
 	 		
-	 		
-	 		}
-		 			
-		   $(this).data($(e.currentTarget).clone(true)).addClass('uk-li-success').children(':hidden').toggle();
-		   $(this).show('table.uk-table').wrap('<tr/>');	  
-			    
+		 				 			
+		   'toggletl' : function(bool){
 		     
+		      var fadetr ;
+		   
+		   if(bool){
+		   
+		   	 $(this).wrap("<tr class='uk-li-success'></tr>").fadeOut('fast'); 
+		  
+		    
+		    }else{
+		    
+		   $(this).unwrap().fadeIn('fast');
+		
+		    	}
+		    	
+		 
+			
+			 
 		     
+		    }, 
+		    
+		    });
 		    
 	
-		 });
+	
+	
 		 
-		 
-		 
-		 $('.table tr').on('click',function(e){
-		 
-		 		console.log(e.delegateTarget,e.currentTarget);
-			 
-			 
+		$.CreateMenu.result().on('click',function(e){
+			var bool = $.CreateMenu.isActive();
+				
+			var fadetr = $($.CreateMenu.toggletl(bool));
+	
+			console.log(fadetr);			
+			
+			
+		
+		 		/*
+		 		$(e.currentTarget).triggerHandler('click',e);
+			  
 			  $('.uk-li-success').delegate('.clearitem','click',function(e){
 				
-				$(e.delegateTarget).removeClass('uk-li-success').fadeOut('fast');
-										
-			});
-
+				 			});
+			
+			
 			});
 
 		
@@ -49,11 +73,14 @@ $('Document').ready(function(e){
 			
 					
 		});
-
-			
-			
-			
+		
+		
 		});
+
+			*/
+			
+			
+	
 
 			 		
 		     		
@@ -88,8 +115,11 @@ $('Document').ready(function(e){
 				
 				
 				
-				
-								
+			});
+
+
+
+});								
 				
 						
 		 

@@ -27,18 +27,16 @@
  	<div class="uk-width-1 uk-container uk-container-center">  
   <ul class="uk-width-1 uk-list uk-list-space uk-grid uk-grid-preserve uk-container uk-container-center uk-animation-scale-up">
 	  
-  <?php foreach($list as $li): ?>  		 
-      <li class="menu-item uk-width-1 uk-grid uk-grid-preserve uk-text-bottom" value="<?php echo $li['dishid'] ?>">
-      	
-      	<span class="clearitem uk-badge uk-badge-danger uk-badge-notification uk-icon uk-icon-minus uk-icon-medium" style="display : none"></span>
-      		  	
-	  	<p class=" uk-width-medium-1-2" ><val class="cm" ><?php echo $li['cm'] ?></val></p>
-	    
-	    <span class=" uk-badge uk-badge-notification uk-width-medium-2-10 " style="display:none">已选<val class="sl">1</val>份</span>
-	  	
-	  	<val class=" uk-width-medium-1-10 jg uk-badge uk-badge-success uk-badge-notification uk-icon-jpy uk-float-right"><?php echo $li['jg'] ?></val>
-	  	
+  <?php foreach($list as $li): ?>  
+  
+  
+  	 <span class="clearitem uk-icon uk-icon-minus-circle uk-icon-medium" style="display:none"></span>
+  	 <span class="uk-icon uk-icon-cutlery uk-float-right" style="display:none"><val class="sl"><b class="uk-text-primary">1</b></val></span>		 
+      <li class="menu-item uk-width-1 uk-grid uk-grid-preserve uk-text-bottom" value="<?php echo $li['dishid'] ?>">  		  	
+	  	<val class="cm uk-width-2-3 uk-text-left"  ><?php echo $li['cm'] ?></val></p>
+	  	<val class="uk-width-1-3 uk-width-medium-1-10 jg uk-icon-jpy uk-badge"><?php echo $li['jg'] ?></val>	
 	   </li>
+  
       
       <?php endforeach ?>
       
