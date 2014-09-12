@@ -5,11 +5,12 @@ body{
 	
 }
 
-.uk-badge{
+.uk-badge-price{
 	
-	border: 1px solid rgba(219,219,219,0.64);
+	border: 1px dashed rgba(198,198,198,1);
 	border-radius: 90px;
 	background: rgba(225,225,225,0.74);
 	color: #454545;
 	padding: 5px;
 }
+
