@@ -16,7 +16,7 @@
  	<nav class="uk-animation-slide-top uk-container-center" data-uk-sticky>
 	   
 	   <button type="button"  class="uk-width-1-2 uk-button uk-icon uk-icon-navicon uk-icon-large uk-float-left uk-text-left" data-uk-offcanvas="{target:'#menu-optclass'}"></button>
-	   <button type="button"  id="modalbtn" class="uk-width-1-2 uk-button uk-icon uk-icon-check-square-o uk-icon-large uk-float-right uk-text-right"></button>  
+	   <button type="button"  id="modalbtn" class="uk-width-1-2 uk-button uk-icon uk-icon-external-link-square uk-icon-large uk-float-right uk-text-right" ></button>  
  		</div>
  	</nav>
  	 	
@@ -24,23 +24,27 @@
 
   
 
-  <ul class="uk-list uk-list-space uk-text-center">
+  <ul class="uk-list uk-list-space uk-text-center" type="square">
 	  
   <?php foreach($list as $li): ?>  
   
-  	<li class="item uk-text-center uk-width-8-10 uk-container-center" value="<?php echo $li['dishid'] ?>" >
+  	<li class="item uk-text-center uk-width-8-10 uk-container-center uk-grid-preserve" varue="<?php echo $li['dishid'] ?>" >
 	  	
 	  	
 	  	
-	  	<tt class="in1 uk-width-1-2" hidden="hidden" >
 	  	
-	  	 <span class="uk-width-1-2 clearitem uk-icon-minus-circle uk-text-left" ></span>
-	  	 <span class="uk-width-1-2 uk-float-right uk-icon-cutlery uk-text-right">&nbsp;&nbsp;<val class="sl"><b class="uk-text-primary">1</b></val>&nbsp;&nbsp;</span>
-	  	 </tt>
-  	  
-	  	<tt class="in2 uk-width-1-2">  		  	
-	  	 <val class="cm uk-width-1-2 "  ><?php echo $li['cm'] ?></val>
-	  	 <val class="jg uk-width-2-10  uk-icon-jpy uk-badge-price uk-float-right"><?php echo $li['jg'] ?></val>	
+	  	<div class="uk-grid uk-grid-preserve" hidden="hidden">
+	  	<span class="uk-width-1-2 uk-icon-minus-circle uk-text-left uk-close-alt"></span>
+	  	<span class="uk-width-1-2 uk-text-right uk-icon-cutlery" >&nbsp; <var class="sl uk-text-primary uk-float-right">1 </var></span>
+	  	</div>
+	  
+	  	<tt class="uk-width-1 uk-grid-preserve">  		  	
+	  
+	  	 <var class="cm uk-width-1-2 uk-text-left"><?php echo $li['cm'] ?></var>  
+	  
+	  
+	  	 <var class="jg uk-width-3-10  uk-icon-jpy uk-badge-price uk-float-right"><?php echo $li['jg'] ?></var>	
+	  
 	  	</tt>
    
 	</li>
@@ -88,28 +92,48 @@
     </div>
   </div>
   	
-  	
-  	
-  	
-  	<div id="menu-print-modal" class="uk-modal  uk-container-center">
   	  	
-	    <dialog class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless uk-width-1 uk-container-center">
+  	
+  	<div id="menu-print-modal" class="uk-modal uk-container-center uk-width-1">
+  	  	
+	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless uk-container-center">
 	    
-	        <div class="uk-overflow-container uk-panel uk-container uk-width-1 uk-panel-box">
 	    
+	    <nav class="uk-container-center">
+	    <a  class=" uk-button uk-modal-close uk-width-1-3  uk-text-center" ><i class="uk-text-center uk-icon-button uk-icon-ban"></i></a>
+	  	    
+	    <a  class=" uk-button uk-width-1-3 uk-float-right " ><i class="uk-text-center uk-icon-button uk-icon-check-square-o "></i></a>
+	    </nav>
+	    
+	    
+	        <div class="uk-overflow-container uk-panel uk-panel-box">
+	        	
+	        	
+	        	<caption class="uk-container uk-cantainer-center uk-width-1" >
+	        	
+	        	
+	        	<h3 class="uk-text-bold uk-text-center" >菜单预览</h3>
+	        	
+	 
+	        	</caption>
+	        	
+	        	<hr />
+
 	        	<table class="uk-table uk-width-8-10 uk-container-center">
 	        		
-	        		<caption class="uk-text-bold uk-text-center"><h3 class="uk-text-bold uk-text-center">清单预览</h3></caption>
+	        	
 	        		
-	        		<tbody class="uk-width-1">
+	        		<tbody >
 	        		
 	        		</tbody>
-	        
+	     			
 	        	</table>
+	        
 	        </div>
-		</dialog>
+	        
+		</div>
 		
-		<a class="uk-button uk-icon-ban uk-icon-medium uk-width-1"></a>
+		
   	</div>  
   	  
   </body>

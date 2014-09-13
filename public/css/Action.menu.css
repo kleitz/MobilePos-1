@@ -14,15 +14,37 @@ li.item
 	box-shadow: 1px 1px 4px rgba(153,153,153,0.63);
 	border-radius: 8px;
 	border: 1px solid rgba(225,225,225,0.31);
-	font-family:monospace;
-	font-weight: bold;
-	font-size: 17px;
+	font-family: '微软雅黑';
+	font-weight: bolder;
+	font-size: 20px;
+	font-style:normal;
 	background: rgba(225,225,225,0.24);
+	
+	
+}
+
+li.kay-li,li.item
+
+{
+
+	margin-bottom: 15px;
+  
+
+}
+
+
+tr.kay-li li div
+
+{
+	
+	display: block;
+	
+	
 	
 }
 
 
-val.cm.uk-width-1-2
+var.cm.uk-width-1-2
 
 {
 
@@ -43,13 +65,10 @@ a:hover
 }
 
 
-a{
-
-	color: #370072;
-}
 
 
-nav.uk-width-1-1
+
+nav.uk-container-center
 
 {
 	background: rgba(238,238,238,1);
@@ -80,3 +99,46 @@ margin-top: 46px;
 
 }
 
+
+span.uk-icon-minus-circle
+{
+
+color: #ff4141;
+
+
+
+}
+
+
+
+nav.uk-button:hover ,a.uk-button:hover
+
+{
+
+
+background: -webkit-linear-gradient(#ffffff 100%, rgba(0,0,0,0.15) 100%);
+
+
+
+}
+
+
+
+i.uk-icon-ban ,i.uk-icon-ban:hover
+
+{
+
+color:#5a5a5a;
+background: inherit;
+
+}
+
+
+
+i.uk-icon-check-square-o , i.uk-icon-check-square-o:hover
+
+{
+
+color:#2379ae;
+background: inherit;
+}

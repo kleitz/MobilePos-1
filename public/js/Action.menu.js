@@ -3,33 +3,29 @@ $('Document').ready(function(e){
 
 
 
-	 $.Menu = ({
+	$.Mfn = ({
 	 
-	 		'table' : $('table.uk-table'),
-	 
-	 		'modal' :  $.UIkit.modal('#menu-print-modal'),
+	 	 "table" :  $('table.uk-table tbody'),
 		 
-		    'items' :  $('li.item') ,
+	 	'items' :  $('li.item') ,
 		 	    
-		 	'mdbtn' : $('#modalbtn'),
-		 	
-		 	'ban' : $('a.uk-icon-ban'),
+	 	'mdbtn' : $('#modalbtn'),	
 	 	  
-		 	'addSl' : function(e){
+		 'addSl' : function(e){
 	 	  
 	 	  $(e.delegateTarget).find('.sl').text(function(){
-			 
-			 var sl = parseInt($(this).text());
+			
+			  sl = parseInt($(this).text());
 			 		return sl+1;
 			 		});
 			 		
 			 		},
 	 					 			
-		 	'wraptoggle' : function(e,bool){
+		 'wraptoggle' : function(e,bool){
 		 			if(bool){
 		 			
 			 		
-		 				$(e.currentTarget).clone(true).appendTo('table.uk-table').wrap("<tr class='kay-li' />").find('tt.in1').show('200');
+		 				$(e.currentTarget).clone(true).appendTo($.Mfn.table).wrap("<tr class='kay-li' />").find('tt.in1').show('200');
 		 			 	$(e.currentTarget).fadeOut('fast');
 			 				
 			 				
@@ -44,16 +40,14 @@ $('Document').ready(function(e){
 			 			},
 			 			
 			 			
-			 'hide' : function(e){
+		 'hide' : function(e){
 				 
 						$(e.deledateTarget).hide();	 
 				 
 						},
 						
 						
-			
-		 	
-		 	'reset' : function(dom,getorpush){
+		 'reset' : function(dom,getorpush){
 		 		
 		 		
 		 		if(getorpush==='get'){
@@ -81,51 +75,41 @@ $('Document').ready(function(e){
 		 });
 		 
 	  
+
 		
-	 $($.Menu.items).on('click',function(e){
+	 $($.Mfn.items).on('click',function(e){
 		  
-		 
-		  	var bool;
+		 			//console.log(e.currentTarget);
+		 			
+		 			  	var bool;
 			  	
 			  if( bool = $(e.currentTarget).parent().is('ul') ){
 				
 				  
-				  	$.Menu.wraptoggle(e,bool);
+				  	$.Mfn.wraptoggle(e,bool);
 				  
 			  }			  
 		  
 		  
 		  
+			  
+		  
 	  });
 
 
-
-		 
+	  $($.Mfn.mdbtn).on('click',function(e){
+	  
+	  		var modal = $.UIkit.modal('#menu-print-modal');
+	  		
+		  
+	  		modal.options.bgclose = false;
+		  
+		   console.log(modal.show());
+		  
+		  
+	  });		 
 	 
-	 
-	 $($.Menu.mdbtn,$.Menu.ban).on('click',function(){
-	
-		 
-		 if ( $(e.Target ).is('a') {
-			 	$.Menu.modal.hide();
-			 } else {
-				$.Menu.modal.show();
-			}
-		 
-	 }); 
-
-  $($.Menu.modal).on('click',function(e){
-			
 		
-			
-			
-			
-			
-			
-		});	
-				
-				
-	
 
 
 
