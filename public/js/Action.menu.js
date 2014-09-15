@@ -4,110 +4,119 @@ $('Document').ready(function(e){
 
 
 	$.Mfn = ({
-	 
-	 	 "table" :  $('table.uk-table tbody'),
-		 
+	 	 
 	 	'items' :  $('li.item') ,
 		 	    
 	 	'mdbtn' : $('#modalbtn'),	
+	 	
+	 	'mdtable' : $('.kay-li'),
 	 	  
-		 'addSl' : function(e){
+		'addSl' : function(e){
 	 	  
 	 	  $(e.delegateTarget).find('.sl').text(function(){
 			
-			  sl = parseInt($(this).text());
-			 		return sl+1;
+			var  sl = parseInt($(this).text());
+			 		return ++sl  ;
 			 		});
 			 		
+			 	return $(e.delegateTarget);	
 			 		},
 	 					 			
 		 'wraptoggle' : function(e,bool){
-		 			if(bool){
+		 		 
+					 if(bool){
+
+		 				a = $(e.currentTarget).clone(true).appendTo('tbody').wrap("<tr class='kay-li' />");
+		 				$(a).find(':hidden').show('fast');
 		 			
-			 		
-		 				$(e.currentTarget).clone(true).appendTo($.Mfn.table).wrap("<tr class='kay-li' />").find('tt.in1').show('200');
 		 			 	$(e.currentTarget).fadeOut('fast');
 			 				
 			 				
-		 				 }else{
-
-		 				$(e.currentTarget).unwrap().show('fast');
-		 				 
-		   			 					
+		 			}else{
+		 			
+		 				$(e.target).is('span.uk-close')
+			 				
+			 			return this.addSl(e);
+		 				//$(e.delegateTarget).unwrap().slideToggle('fast');
+		 				 		
 			 			}
-		    
+			 		},
 			 			
-			 			},
-			 			
-			 			
-		 'hide' : function(e){
-				 
-						$(e.deledateTarget).hide();	 
-				 
-						},
 						
-						
-		 'reset' : function(dom,getorpush){
-		 		
-		 		
-		 		if(getorpush==='get'){
-		 		
-		 		var res = new Array();
-		 		
-		 		$(dom).each(function(n){
-			 		
-			 			 		
-			 	res[n] = $(this);
-			 	
-			 	});
-			 		
-		 		}else{
-			 		
-			 	var n = $(dom).index()
-			 		
-			 	 return dom = res[n] ;
-			 		
-		 		}
-		 		
-		 		
-	 		},
+							 
+		 'closef' : function(e){
+			 			
+				if($(e.target).is("a.uk-close")){
+				 
+				 $(e.currentTarget).fadeOut('fast');
+				 
+				}
+				},
 		 	
+		
+		
+		
 		 });
 		 
 	  
 
+	
+
 		
 	 $($.Mfn.items).on('click',function(e){
-		  
-		 			//console.log(e.currentTarget);
-		 			
-		 			  	var bool;
-			  	
-			  if( bool = $(e.currentTarget).parent().is('ul') ){
-				
-				  
-				  	$.Mfn.wraptoggle(e,bool);
-				  
-			  }			  
-		  
-		  
-		  
-			  
-		  
+	 
+//console.log($(e.currentTarget).parent().is('ul.uk-list'));
+		 
+		var ttr = $.Mfn.wraptoggle(e,$(e.currentTarget).parent().is('ul.uk-list'));
+		 
+		 	
+
+		  		 	  
 	  });
-
-
-	  $($.Mfn.mdbtn).on('click',function(e){
 	  
-	  		var modal = $.UIkit.modal('#menu-print-modal');
-	  		
-		  
+	  
+	 
+    
+   	   $('.uk-animation-slide-top').on('click',function(e){
+	       	
+	       //console.log($(e.data));
+	        $.ttr = { tr : $('tbody tr.kay-li') };
+			modal = $.UIkit.modal('#menu-print-modal');
 	  		modal.options.bgclose = false;
-		  
-		   console.log(modal.show());
+	  			  		
+	  		if($.ttr.tr.length===0){
+		  			
+				  		$.UIkit.notify({
+					    message : "<p class='uk-icon-smile-o uk-text-center uk-width-1'> &nbsp;&nbsp;客官,先点几个喜欢吃的菜吧 !  </p>",
+					    status  : 'info',
+					    timeout : 2000,
+					    pos     : 'top-center' });
+		  		
+		  		
+	  		}else{
+		  		
+		  		
+		  	modal.show();
+				  		
+			  		}
+			  		
+			  
+
+	  		
 		  
 		  
 	  });		 
+	  
+	 
+	 
+	 
+	 //on('click',function(e){
+	  
+	    
+	    
+				  
+		  
+	  //});
 	 
 		
 

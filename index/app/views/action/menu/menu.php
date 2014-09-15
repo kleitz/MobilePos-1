@@ -10,53 +10,61 @@
   </head>
   
   
-  <body>
+  <body >
   
  	
- 	<nav class="uk-animation-slide-top uk-container-center" data-uk-sticky>
-	   
-	   <button type="button"  class="uk-width-1-2 uk-button uk-icon uk-icon-navicon uk-icon-large uk-float-left uk-text-left" data-uk-offcanvas="{target:'#menu-optclass'}"></button>
-	   <button type="button"  id="modalbtn" class="uk-width-1-2 uk-button uk-icon uk-icon-external-link-square uk-icon-large uk-float-right uk-text-right" ></button>  
- 		</div>
+ 	<nav class=" uk-navbar uk-container-max uk-animation-slide-top" data-uk-sticky>
+	 		<ul class="uk-navbar-nav uk-width-1-2" >
+          <li class="uk-width-1 uk-float-left uk-text-left">
+          <a href="#"   data-uk-offcanvas="{target:'#menu-optclass'}" >  
+						<i class=" uk-icon uk-icon-navicon uk-icon-medium"></i>  
+          </a>
+          </li>
+       </ul> 
+	 	
+	 	 <ul class="uk-navbar-nav uk-width-1-2">
+				<li class="uk-width-1 uk-float-right uk-text-center">
+				<a href="#" class="uk-text-center">
+					<i id="modalbtn" class="uk-icon uk-icon-external-link-square uk-icon-medium" ></i>
+				</a>
+				</li>
+		</ul>
+			
+		
+	 	 
  	</nav>
- 	 	
-    
 
-  
 
-  <ul class="uk-list uk-list-space uk-text-center" type="square">
+
+
+<form class="uk-form " data-uk-margin>
+  <fieldset name="menu" class="uk-text-center uk-animation-scale-down">
+		<ul class="uk-list">
 	  
-  <?php foreach($list as $li): ?>  
-  
-  	<li class="item uk-text-center uk-width-8-10 uk-container-center uk-grid-preserve" varue="<?php echo $li['dishid'] ?>" >
-	  	
-	  	
-	  	
-	  	
-	  	<div class="uk-grid uk-grid-preserve" hidden="hidden">
-	  	<span class="uk-width-1-2 uk-icon-minus-circle uk-text-left uk-close-alt"></span>
-	  	<span class="uk-width-1-2 uk-text-right uk-icon-cutlery" >&nbsp; <var class="sl uk-text-primary uk-float-right">1 </var></span>
-	  	</div>
-	  
-	  	<tt class="uk-width-1 uk-grid-preserve">  		  	
-	  
-	  	 <var class="cm uk-width-1-2 uk-text-left"><?php echo $li['cm'] ?></var>  
-	  
-	  
-	  	 <var class="jg uk-width-3-10  uk-icon-jpy uk-badge-price uk-float-right"><?php echo $li['jg'] ?></var>	
-	  
-	  	</tt>
-   
+  <?php foreach($list as $li): ?> 
+ 
+<label for="<?php echo $li['dishid'] ?>">
+	<li class="item uk-width-8-10 uk-container-center uk-text-bold uk-text-center uk-margin">	
+		<legend hidden="hidden">
+			<input class="uk-width-1" id="<?php echo $li['dishid'] ?>" type="checkbox" name="item"  value="<?php print_r($li); ?>" >
+			<span class="uk-close uk-float-left"></span>
+			<a class="uk-float-right"><var class="sl uk-text-primary uk-badge uk-icon-cutlery">1</var></a>
+		</legend>	
+		<a class="uk-text-right"><?php echo $li['cm'] ?></a>				  
+		<var class="uk-text-center uk-icon-jpy uk-width-1-5 uk-badge-price uk-float-right" ><?php echo $li['jg'] ?></var>
 	</li>
-  
+</label>
+  	
       
       <?php endforeach ?>
       
   </ul>
+  </fieldset>
+</form>
+
+
   
-</div>
-  
-  	<div id="menu-optclass" class="uk-offcanvas uk-text-bold">
+  <div id="menu-optclass" class="uk-offcanvas uk-text-bold">
     <div class="uk-offcanvas-bar uk-text-center " >
     	<div class="uk-panel">
     		 <h3 class="uk-panel-title">Menu</h3>
@@ -96,14 +104,16 @@
   	
   	<div id="menu-print-modal" class="uk-modal uk-container-center uk-width-1">
   	  	
-	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless uk-container-center">
+	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless uk-container-center" >
 	    
 	    
 	    <nav class="uk-container-center">
-	    <a  class=" uk-button uk-modal-close uk-width-1-3  uk-text-center" ><i class="uk-text-center uk-icon-button uk-icon-ban"></i></a>
+
+	    <a  class=" uk-button uk-modal-close uk-width-1-2  uk-text-left" ><i class="uk-icon-button uk-icon-ban"></i></a>
 	  	    
-	    <a  class=" uk-button uk-width-1-3 uk-float-right " ><i class="uk-text-center uk-icon-button uk-icon-check-square-o "></i></a>
-	    </nav>
+	    <a  class=" uk-button uk-width-1-2 uk-float-right uk-text-right" ><i class=" uk-icon-button uk-icon-check-square-o "></i></a>
+	    
+</nav>
 	    
 	    
 	        <div class="uk-overflow-container uk-panel uk-panel-box">
@@ -119,15 +129,13 @@
 	        	
 	        	<hr />
 
-	        	<table class="uk-table uk-width-8-10 uk-container-center">
+	        	<form class="uk-form uk-width-8-10 uk-container-center"> 		
 	        		
-	        	
+	        		<fieldset>
 	        		
-	        		<tbody >
-	        		
-	        		</tbody>
+	        		</fieldset>
 	     			
-	        	</table>
+	        	</form>
 	        
 	        </div>
 	        

@@ -1,137 +1,42 @@
 
-nav.uk-width-1 div button
+li.item , tr.kay-li li.item 
 {
-
-padding-top: 15px;
-padding-bottom: 15px;
+	
+	box-shadow: 1px 2px 4px 1px rgba(153,153,153,0.38);
+	border-radius: 9px;
+	background: rgba(255,255,255,0.04);
+	color: #eeeeee;
+	letter-spacing:5px;
+	padding:10px;
+	font-size: inherit;
 }
 
 
+/*  菜单列表项  li.item */
 
-li.item
+tr.kay-li
+
 {
-	padding: 10px;
-	box-shadow: 1px 1px 4px rgba(153,153,153,0.63);
-	border-radius: 8px;
-	border: 1px solid rgba(225,225,225,0.31);
-	font-family: '微软雅黑';
-	font-weight: bolder;
-	font-size: 20px;
-	font-style:normal;
-	background: rgba(225,225,225,0.24);
-	
+
+	box-shadow: inset 0px 1px 4px rgba(39,176,0,0.77);
+
 	
 }
 
-li.kay-li,li.item
-
-{
-
-	margin-bottom: 15px;
-  
-
-}
-
-
-tr.kay-li li div
-
-{
-	
-	display: block;
-	
-	
-	
-}
-
-
-var.cm.uk-width-1-2
-
-{
-
-display: inline-block;
-color:#4b4b4b;
-padding-top: 5px;
-text-align: left;
-
-} 
-
-
-a:hover
-{
-
-	
-	text-decoration:none;
-	
-}
+/*   已选 菜单列表项 tr.kay-li   */
 
 
 
-
-
-nav.uk-container-center
-
-{
-	background: rgba(238,238,238,1);
-
-}
-
-
-
-table
+form.uk-form
 {
 
 margin-top: 20px;
-}
-
-
-
-	
-nav.uk-animation-slide-top
-{
-padding-top: 10px;
-
-}
-
-ul.uk-list.uk-list-space.uk-text-center
-{
-
-margin-top: 46px;
-
-}
-
-
-span.uk-icon-minus-circle
-{
-
-color: #ff4141;
-
-
 
 }
 
 
 
-nav.uk-button:hover ,a.uk-button:hover
 
-{
-
-
-background: -webkit-linear-gradient(#ffffff 100%, rgba(0,0,0,0.15) 100%);
-
-
-
-}
-
-
-
-i.uk-icon-ban ,i.uk-icon-ban:hover
-
-{
-
-color:#5a5a5a;
-background: inherit;
-
-}
 
 
 
@@ -140,5 +45,52 @@ i.uk-icon-check-square-o , i.uk-icon-check-square-o:hover
 {
 
 color:#2379ae;
-background: inherit;
+background: rgb(238,238,238);
+
 }
+
+/*  预览页 功能键 */
+
+
+span.uk-width-1-2.uk-icon-minus-circle.uk-text-left.uk-close-alt
+{
+
+background:rgba(240,240,240,1);
+
+
+}
+
+.uk-badge-price{
+	
+	padding-top:5px;
+	border: 1px solid rgba(195,195,195,0.96);
+	border-radius: 10px;
+	background: rgba(195,195,195,0.96);
+	color: #454545;
+	
+}
+
+
+var
+{
+
+letter-spacing:3px;
+}
+
+var.sl
+{
+letter-spacing:6px;
+
+}
+
+
+ul.uk-animation-scale-down
+{
+
+padding-top: 20px;
+
+}
+
+
+
+
