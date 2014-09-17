@@ -10,25 +10,21 @@
   </head>
   
   
-  <body class="uk-container-max uk-height-1-1 uk-text-center">
+  <body class="uk-container-max uk-height-1-1 uk-text-center uk-margin">
+		
 
-	 	 	<div class="uk-heading uk-text-middle uk-container-max" data-uk-sticky>
+	 	 	<div class="uk-heading uk-text-middle uk-text-left uk-container-max" data-uk-sticky>
 
-		 	 	<h2> Hey Menu </h2> 	
-		 	 		<img class="" src="<?php echo base_url('./favicon.ico') ?>" / >
-
+		 	 	<h2 class="uk-text-center"><blockquote> Hey Menu </blockquote></h2> 
 		 	 	<nav id="headnav">
 	 			<ul class="uk-icon">
-
-		 				<hr />
           
-		 			<li class="uk-text-left">
-          <i href="#" type="button" data-uk-offcanvas="{target:'#menu-optclass'}" class="uk-icon-list-ul uk-icon-medium">  
-						
+		 			<li class="uk-float-right" data-uk-offcanvas="{target:'#menu-optclass'}">
+          <i  class="uk-icon-list-ul uk-icon-medium">  
 					</i>
           </li>
 	 	 
-					<li	id="mdbtn" class="uk-text-right">
+					<li	id="mdbtn" class="uk-float-right">
 					<i href="#" type="button" class="uk-icon-external-link-square uk-icon-medium">
 							
 					</i>
@@ -36,22 +32,22 @@
 	 			
 				</ul>
 	 	 	 </nav>
-	 	 	 
-		 	 	 
-	 	 	
+
 	 	 	</div>	 
 
 	 	 	<hr />
 
+	 	 <img class="uk-thumbnail-kay" src="<?php echo base_url('./favicon.ico') ?>" / >
+	 	 <img class="uk-thumbnail-kay-lb" src="<?php echo base_url('./public/img/banner-1.png') ?>" / >
+
 	 	 
-	 
-<form class="uk-container-max uk-width-1 uk-text-middle" >
+<form class="uk-container-max uk-width-1 uk-text-middle " >
   <fieldset class="uk-text-center"  name="menu">
 		
 	  
   <?php foreach($list as $li): ?> 
  
-<label class="item uk-width-9-10 uk-container-center uk-text-center uk-margin" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+<label class="item uk-width-9-10 uk-container-center uk-text-center uk-margin" data-uk-scrollspy="{cls:'uk-animation-fade'}" >
 <input class="uk-width-1-10 uk-float-left" id="<?php echo $li['dishid'] ?>" type="checkbox" name="item"  value="<?php print_r($li); ?>" >
 		<legend hidden="hidden">
 			<span class="uk-close uk-float-left"></span>
@@ -107,12 +103,12 @@
   	
   	  	
   	
-  	<div id="menu-print-modal" class="uk-modal uk-container-max">
+  	<div id="menu-print-modal" class="uk-modal uk-container uk-container-center">
   	  	
 	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless" >
 	    
 	    
-	    <nav class="uk-width-1 uk-text-center uk-container uk-animation-fade">
+	    <nav class="uk-text-center uk-container-max uk-animation-fade">
 
 	    <a  class=" uk-button  uk-width-1-2 uk-float-left uk-animation-silde-left uk-text-left" >
 						<i class="uk-width-1 uk-icon-times  uk-modal-close"></i></a>
@@ -122,7 +118,7 @@
 	    
 			</nav>
 	    
-	       	    	<form class="uk-form uk-width-1 uk-container uk-animation-scale-down uk-overflow-container"> 		
+	       	    	<form class="uk-form uk-container-max uk-animation-scale-down uk-overflow-container"> 		
 
 							<fieldset class="kay-menu"  name="menu">
 

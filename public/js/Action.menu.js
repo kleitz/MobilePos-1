@@ -23,7 +23,7 @@ $('Document').ready(function(e){
 			 	return $(e.delegateTarget);	
 			 		},
 	 					 			
-		 'wraptoggle' : function(e,bool){
+		'wrap' : function(e,bool){
 		 		 
 					 if(bool){
 
@@ -32,14 +32,6 @@ $('Document').ready(function(e){
 		 			
 		 			}else{
 		 			
-		 		//		$(e.target).is('span.uk-close')
-			 				
-		 		//		this.addSl(e);
-		 				//$(e.delegateTarget).unwrap().slideToggle('fast');
-		 				 		
-			 			}
-
-
 			 			return $(e.currentTarget);
 			 		},
 			 			
@@ -88,20 +80,11 @@ $('Document').ready(function(e){
 
 
 
-
-
-
-
-
-
-
-
-
-
    });
 		
 //  
-	 $($.Mfn.items).on('click',function(e){
+	 
+$($.Mfn.items).on('click',function(e){
 
 		 $.mufn.voli(e,$(this).hasClass('kay-item'));
 					
@@ -109,17 +92,7 @@ $('Document').ready(function(e){
 });
 			
 
-//on('select',function(e){
-		 	
 
-		 				 			 							
-			 							
-		 					
-
-	  
-	  
-	 
-    
    	   $('#mdbtn').on('click',function(e){
 	       	
 	      

@@ -50,15 +50,19 @@ color: #363636;
 fieldset.uk-text-center
 {
 list-style: none;
-box-shadow: 0px 4px 10px rgba(185,185,185,1);
+box-shadow: inset 1px 1px 10px rgba(205,205,205,0.61);
 padding:  30px 0;
+
 }
 /* 表单自定义字段 */
 
 
 hr
 {
-margin: 15px
+margin: 10px 0px;
+box-shadow: 0 1px 1px rgba(255,255,255,1);
+background: #fff;
+color: #fff;
 
 }
 
@@ -68,23 +72,44 @@ div.uk-heading
 {
 
 width:100%;
-box-shadow: 0px 4px 10px rgba(185,185,185,1);
-background: rgba(88,88,88,0.1);
+box-shadow:  1px 7px 10px rgba(145,145,145,1);
+background: rgba(288,288,288,1);
 color: #383838;
-max-height: 60px;
+height: 50px;
 font-family: cursive;
 font-weight: bold;
 display: inherit;
+text-align: center;
+padding-top: 20px;
+
 }
 
-#headnav ,#headnav ul.uk-icon,li , .uk-heading img,h2,img
+#headnav,ul.uk-icon,li,.uk-heading h2,h2 blockquote
 
 {
 max-width: 80px;
-padding:0;
-margin: 0;
 display:inline;
-font-family: inherit;
+font-family: cursive;
+font-weight: bold;
+z-index: inherit;
+padding:5px 16px;
+
+
+
+}
+
+img.uk-thumbnail-kay
+{
+width:80px;
+padding: 10px
+
+}
+img.uk-thumbnail-kay-lb
+{
+
+width: 190px;
+
+
 
 }
 
