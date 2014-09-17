@@ -1,95 +1,95 @@
 
-li.item , tr.kay-li li.item 
+
+label.item,.item 
 {
-	
-	box-shadow: 1px 2px 4px 1px rgba(153,153,153,0.38);
-	border-radius: 9px;
-	background: rgba(255,255,255,0.04);
-	color: #eeeeee;
-	letter-spacing:5px;
-	padding:10px;
-	font-size: inherit;
+	display: list-item;
+	box-shadow: inset 0px 1px 6px rgba(253,253,253,1);
+	border-radius: 13px;
+	background: rgba(223,223,223,0.3);
+	color: #2a2a2a;
+	padding: 10px 5px;
+	margin: 10px 15px;
+	font-size: 19px;
+	font-weight: bold;
+	text-align: center;
 }
 
 
 /*  菜单列表项  li.item */
 
-tr.kay-li
-
-{
-
-	box-shadow: inset 0px 1px 4px rgba(39,176,0,0.77);
-
-	
-}
-
-/*   已选 菜单列表项 tr.kay-li   */
 
 
+.item a{
 
-form.uk-form
-{
-
-margin-top: 20px;
+color: #363636;
 
 }
 
 
 
-
-
-
-
-i.uk-icon-check-square-o , i.uk-icon-check-square-o:hover
-
-{
-
-color:#2379ae;
-background: rgb(238,238,238);
-
-}
 
 /*  预览页 功能键 */
 
 
-span.uk-width-1-2.uk-icon-minus-circle.uk-text-left.uk-close-alt
-{
-
-background:rgba(240,240,240,1);
-
-
-}
 
 .uk-badge-price{
 	
-	padding-top:5px;
-	border: 1px solid rgba(195,195,195,0.96);
-	border-radius: 10px;
-	background: rgba(195,195,195,0.96);
-	color: #454545;
+	box-shadow: 0px 1px 1px 0px rgba(142,142,142,0.3);	
+	border-radius: 9px;
+	background: rgba(68,68,68,0.8);
+	color: rgba(188,188,188,0.96);
+	padding-top:3px; 
 	
 }
 
+/* 价格标签 */
 
-var
+
+
+
+fieldset.uk-text-center
 {
+list-style: none;
+box-shadow: 0px 4px 10px rgba(185,185,185,1);
+padding:  30px 0;
+}
+/* 表单自定义字段 */
 
-letter-spacing:3px;
+
+hr
+{
+margin: 15px
+
 }
 
-var.sl
+
+div.uk-heading
+
 {
-letter-spacing:6px;
+
+width:100%;
+box-shadow: 0px 4px 10px rgba(185,185,185,1);
+background: rgba(88,88,88,0.1);
+color: #383838;
+max-height: 60px;
+font-family: cursive;
+font-weight: bold;
+display: inherit;
+}
+
+#headnav ,#headnav ul.uk-icon,li , .uk-heading img,h2,img
+
+{
+max-width: 80px;
+padding:0;
+margin: 0;
+display:inline;
+font-family: inherit;
 
 }
 
+/* 页脚页眉 */
 
-ul.uk-animation-scale-down
-{
-
-padding-top: 20px;
-
-}
 
 
 

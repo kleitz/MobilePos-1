@@ -3,17 +3,49 @@
 html
 {
 	font-family: Arial,  "微软雅黑";
-	background: rgba(176,176,176,0.4);
-	text-indent: 10px;
+	text-indent: 2px;
+	
 
 }
 
+
+body 
+{
+
+background: rgba(253,253,253,1);
+
+padding:10px;
+
+padding-top: 0px;
+
+}
+
+body div.uk-heading
+{
+
+width: 100%;
+}
+
+body :hover
+{
+
+background: inherit;
+
+}
+
+a
+{
+
+color: #0096a6;
+
+}
 
 a:hover
 {
 
 	
 	text-decoration:none;
+	color: #0096a6;
 	
 }
 

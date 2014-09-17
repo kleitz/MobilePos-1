@@ -4,12 +4,13 @@ $('Document').ready(function(e){
 
 
 	$.Mfn = ({
+
 	 	 
-	 	'items' :  $('li.item') ,
+	 	'items' :  $('label.item') ,  //菜单列表
 		 	    
 	 	'mdbtn' : $('#modalbtn'),	
 	 	
-	 	'mdtable' : $('.kay-li'),
+	 	'mditem' : $('fieldset.kay-menu label.item'),
 	 	  
 		'addSl' : function(e){
 	 	  
@@ -26,20 +27,20 @@ $('Document').ready(function(e){
 		 		 
 					 if(bool){
 
-		 				a = $(e.currentTarget).clone(true).appendTo('tbody').wrap("<tr class='kay-li' />");
-		 				$(a).find(':hidden').show('fast');
+		 			return	$(e.currentTarget).appendTo('fieldset.kay-menu').addClass("kay-item");
+		 				
 		 			
-		 			 	$(e.currentTarget).fadeOut('fast');
-			 				
-			 				
 		 			}else{
 		 			
-		 				$(e.target).is('span.uk-close')
+		 		//		$(e.target).is('span.uk-close')
 			 				
-			 			return this.addSl(e);
+		 		//		this.addSl(e);
 		 				//$(e.delegateTarget).unwrap().slideToggle('fast');
 		 				 		
 			 			}
+
+
+			 			return $(e.currentTarget);
 			 		},
 			 			
 						
@@ -50,7 +51,7 @@ $('Document').ready(function(e){
 				 
 				 $(e.currentTarget).fadeOut('fast');
 				 
-				}
+				 }
 				},
 		 	
 		
@@ -60,31 +61,73 @@ $('Document').ready(function(e){
 		 
 	  
 
-	
 
+		 $.mufn = ({
+
+
+			 'voli' : function(e,bool){
+
+					 	if(bool){
+						 		
+						 			//  true 则执行添加数量的方法
+						 			$.Mfn.addSl(e);
+						 			return e;
+
+					 		}else{
+
+						 	  $(this).data(this);
+						 	return clonenode	=	$.Mfn.wraptoggle(e,true);
+						 	
+						 		
+						 		//  没有被选中,执行一个添加类的方法并存储该数据,返回方法返回会后的处理数据
+					 		}
+					 		
+					 		
+			 },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   });
 		
+//  
 	 $($.Mfn.items).on('click',function(e){
-	 
-//console.log($(e.currentTarget).parent().is('ul.uk-list'));
-		 
-		var ttr = $.Mfn.wraptoggle(e,$(e.currentTarget).parent().is('ul.uk-list'));
-		 
+
+		 $.mufn.voli(e,$(this).hasClass('kay-item'));
+					
+
+});
+			
+
+//on('select',function(e){
 		 	
 
-		  		 	  
-	  });
+		 				 			 							
+			 							
+		 					
+
 	  
 	  
 	 
     
-   	   $('.uk-animation-slide-top').on('click',function(e){
+   	   $('#mdbtn').on('click',function(e){
 	       	
-	       //console.log($(e.data));
-	        $.ttr = { tr : $('tbody tr.kay-li') };
-			modal = $.UIkit.modal('#menu-print-modal');
-	  		modal.options.bgclose = false;
+	      
+	        $.Pmenu = { items : $('form.uk-form fieldset') };
+					modal = $.UIkit.modal('#menu-print-modal');
+					modal.options.bgclose = false;
 	  			  		
-	  		if($.ttr.tr.length===0){
+	  		if($.Pmenu.items.length===0){
 		  			
 				  		$.UIkit.notify({
 					    message : "<p class='uk-icon-smile-o uk-text-center uk-width-1'> &nbsp;&nbsp;客官,先点几个喜欢吃的菜吧 !  </p>",

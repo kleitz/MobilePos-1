@@ -10,55 +10,60 @@
   </head>
   
   
-  <body >
-  
- 	
- 	<nav class=" uk-navbar uk-container-max uk-animation-slide-top" data-uk-sticky>
-	 		<ul class="uk-navbar-nav uk-width-1-2" >
-          <li class="uk-width-1 uk-float-left uk-text-left">
-          <a href="#"   data-uk-offcanvas="{target:'#menu-optclass'}" >  
-						<i class=" uk-icon uk-icon-navicon uk-icon-medium"></i>  
-          </a>
+  <body class="uk-container-max uk-height-1-1 uk-text-center">
+
+	 	 	<div class="uk-heading uk-text-middle uk-container-max" data-uk-sticky>
+
+		 	 	<h2> Hey Menu </h2> 	
+		 	 		<img class="" src="<?php echo base_url('./favicon.ico') ?>" / >
+
+		 	 	<nav id="headnav">
+	 			<ul class="uk-icon">
+
+		 				<hr />
+          
+		 			<li class="uk-text-left">
+          <i href="#" type="button" data-uk-offcanvas="{target:'#menu-optclass'}" class="uk-icon-list-ul uk-icon-medium">  
+						
+					</i>
           </li>
-       </ul> 
-	 	
-	 	 <ul class="uk-navbar-nav uk-width-1-2">
-				<li class="uk-width-1 uk-float-right uk-text-center">
-				<a href="#" class="uk-text-center">
-					<i id="modalbtn" class="uk-icon uk-icon-external-link-square uk-icon-medium" ></i>
-				</a>
-				</li>
-		</ul>
-			
-		
 	 	 
- 	</nav>
+					<li	id="mdbtn" class="uk-text-right">
+					<i href="#" type="button" class="uk-icon-external-link-square uk-icon-medium">
+							
+					</i>
+					</li>
+	 			
+				</ul>
+	 	 	 </nav>
+	 	 	 
+		 	 	 
+	 	 	
+	 	 	</div>	 
 
+	 	 	<hr />
 
-
-
-<form class="uk-form " data-uk-margin>
-  <fieldset name="menu" class="uk-text-center uk-animation-scale-down">
-		<ul class="uk-list">
+	 	 
+	 
+<form class="uk-container-max uk-width-1 uk-text-middle" >
+  <fieldset class="uk-text-center"  name="menu">
+		
 	  
   <?php foreach($list as $li): ?> 
  
-<label for="<?php echo $li['dishid'] ?>">
-	<li class="item uk-width-8-10 uk-container-center uk-text-bold uk-text-center uk-margin">	
+<label class="item uk-width-9-10 uk-container-center uk-text-center uk-margin" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+<input class="uk-width-1-10 uk-float-left" id="<?php echo $li['dishid'] ?>" type="checkbox" name="item"  value="<?php print_r($li); ?>" >
 		<legend hidden="hidden">
-			<input class="uk-width-1" id="<?php echo $li['dishid'] ?>" type="checkbox" name="item"  value="<?php print_r($li); ?>" >
 			<span class="uk-close uk-float-left"></span>
 			<a class="uk-float-right"><var class="sl uk-text-primary uk-badge uk-icon-cutlery">1</var></a>
 		</legend>	
 		<a class="uk-text-right"><?php echo $li['cm'] ?></a>				  
-		<var class="uk-text-center uk-icon-jpy uk-width-1-5 uk-badge-price uk-float-right" ><?php echo $li['jg'] ?></var>
-	</li>
+		<small><var class="uk-text-center uk-icon-jpy uk-width-1-5 uk-badge-price uk-float-right" ><?php echo $li['jg'] ?></var></small>
 </label>
   	
       
       <?php endforeach ?>
       
-  </ul>
   </fieldset>
 </form>
 
@@ -69,7 +74,7 @@
     	<div class="uk-panel">
     		 <h3 class="uk-panel-title">Menu</h3>
     		 <hr />
-        	<ul class="uk-nav uk-nav-side">
+        	<ul class="uk-nav uk-nav-side uk-list uk-list-striped">
 	        <li>
 	          <a href="#">火锅/主菜</a>
 	        </li>
@@ -102,47 +107,60 @@
   	
   	  	
   	
-  	<div id="menu-print-modal" class="uk-modal uk-container-center uk-width-1">
+  	<div id="menu-print-modal" class="uk-modal uk-container-max">
   	  	
-	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless uk-container-center" >
+	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless" >
 	    
 	    
-	    <nav class="uk-container-center">
+	    <nav class="uk-width-1 uk-text-center uk-container uk-animation-fade">
 
-	    <a  class=" uk-button uk-modal-close uk-width-1-2  uk-text-left" ><i class="uk-icon-button uk-icon-ban"></i></a>
+	    <a  class=" uk-button  uk-width-1-2 uk-float-left uk-animation-silde-left uk-text-left" >
+						<i class="uk-width-1 uk-icon-times  uk-modal-close"></i></a>
 	  	    
-	    <a  class=" uk-button uk-width-1-2 uk-float-right uk-text-right" ><i class=" uk-icon-button uk-icon-check-square-o "></i></a>
+	    <a  class=" uk-button uk-width-1-2 uk-float-right uk-animation-silde-right uk-text-right uk-text-success">
+						<i class="uk-width-1 uk-icon-check-square-o uk-text-success"></i></a>
 	    
-</nav>
+			</nav>
 	    
-	    
-	        <div class="uk-overflow-container uk-panel uk-panel-box">
-	        	
-	        	
-	        	<caption class="uk-container uk-cantainer-center uk-width-1" >
-	        	
-	        	
-	        	<h3 class="uk-text-bold uk-text-center" >菜单预览</h3>
-	        	
-	 
-	        	</caption>
-	        	
-	        	<hr />
+	       	    	<form class="uk-form uk-width-1 uk-container uk-animation-scale-down uk-overflow-container"> 		
 
-	        	<form class="uk-form uk-width-8-10 uk-container-center"> 		
-	        		
-	        		<fieldset>
-	        		
-	        		</fieldset>
+							<fieldset class="kay-menu"  name="menu">
+
+
+							</fieldset>
+    		
 	     			
 	        	</form>
 	        
-	        </div>
-	        
+	       	        
 		</div>
 		
 		
   	</div>  
+
+
+
+
+  <div  class="uk-width-1">
+		<footer id="footnav"  class="uk-navbar">
+		<ul class="uk-navbar-nav uk-width-1-2 uk-animation-slide-top" >
+          <li class="uk-width-1">
+          <a href="#" type="button"  class="uk-button" data-uk-offcanvas="{target:'#menu-optclass'}" >  
+						<i class=" uk-icon uk-icon-refresh uk-icon-medium"></i>  
+          </a>
+          </li>
+       </ul> 
+	 	
+	 	 <ul class="uk-navbar-nav uk-width-1-2 uk-animation-slide-top">
+				<li id="mdbtn"  class="uk-width-1 uk-button uk-text-right">
+				<a href="#" type="uk-button" class="uk-button">
+					<i id="modalbtn" class="uk-icon uk-icon-reply uk-icon-medium" ></i>
+				</a>
+				</li>
+		</ul>
+		</footer>
+  </div>
+
   	  
   </body>
   
