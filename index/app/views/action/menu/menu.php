@@ -48,7 +48,7 @@
   <?php foreach($list as $li): ?> 
  
 <label class="item uk-width-9-10 uk-container-center uk-text-center uk-margin" data-uk-scrollspy="{cls:'uk-animation-fade'}" >
-<input class="uk-width-1-10 uk-float-left" id="<?php echo $li['dishid'] ?>" type="checkbox" name="item"  value="<?php print_r($li); ?>" >
+<input class="uk-width-1-10 uk-float-left" id="<?php echo $li['dishid'] ?>" type="checkbox" name="item"  value="<?php $li ?>" >
 		<legend hidden="hidden">
 			<span class="uk-close uk-float-left"></span>
 			<a class="uk-float-right"><var class="sl uk-text-primary uk-badge uk-icon-cutlery">1</var></a>
@@ -103,7 +103,7 @@
   	
   	  	
   	
-  	<div id="menu-print-modal" class="uk-modal uk-container uk-container-center">
+  	<div id="menu-print-modal" class="uk-modal uk-container-max uk-container-center">
   	  	
 	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless" >
 	    
@@ -118,14 +118,12 @@
 	    
 			</nav>
 	    
-	       	    	<form class="uk-form uk-container-max uk-animation-scale-down uk-overflow-container"> 		
+	       	    <form class="uk-form uk-container-max uk-animation-scale-down uk-overflow-container"> 	
+					 			<fieldset id="print-form" class="uk-text-center"  name="menu">
+						 				<p> asdnasdaa</p>
 
-							<fieldset class="kay-menu"  name="menu">
-
-
-							</fieldset>
     		
-	     			
+					 			</fieldset>
 	        	</form>
 	        
 	       	        
@@ -156,6 +154,8 @@
 		</ul>
 		</footer>
   </div>
+
+
 
   	  
   </body>
