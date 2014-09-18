@@ -10,44 +10,47 @@
   </head>
   
   
-  <body class="uk-container-max uk-height-1-1 uk-text-center uk-margin">
+  <body class="uk-height-1-1 uk-text-center">
 		
 
-	 	 	<div class="uk-heading uk-text-middle uk-text-left uk-container-max" data-uk-sticky>
+		<div class="uk-heading uk-width-1 uk-container-max uk-nbfc" data-uk-sticky>
 
-		 	 	<h2 class="uk-text-center"><blockquote> Hey Menu </blockquote></h2> 
-		 	 	<nav id="headnav">
+		 	 
+		 	 	<nav id="headnav" class="uk-width-1">
 	 			<ul class="uk-icon">
           
-		 			<li class="uk-float-right" data-uk-offcanvas="{target:'#menu-optclass'}">
-          <i  class="uk-icon-list-ul uk-icon-medium">  
-					</i>
-          </li>
-	 	 
-					<li	id="mdbtn" class="uk-float-right">
-					<i href="#" type="button" class="uk-icon-external-link-square uk-icon-medium">
-							
-					</i>
-					</li>
+				
+						<blockquote class="uk-text-left"> 
+
+										Hey Menu
+
+										<img class="uk-thumbnail-kay uk-text-center" src="<?php echo base_url('./favicon.ico') ?>" / >
+										<img class="uk-thumbnail-kay-lb" src="<?php echo base_url('./public/img/banner-1.png') ?>" / >
+							</blockquote>
+					
 	 			
 				</ul>
 	 	 	 </nav>
+	 	 	
+</div>
 
-	 	 	</div>	 
+	<section  class=" uk-float-right uk-text-center" data-uk-sticky="{top:250}" data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}">
+          
+				<span class="uk-badge">	
 
-	 	 	<hr />
+					<i  class="uk-display-block uk-icon-th-large uk-icon-large uk-margin " data-uk-offcanvas="{target:'#menu-optclass'}" data-uk-sticky data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"> </i> 
+					<i  type="button" class="uk-display-block uk-icon-large uk-icon-list-alt uk-margin" data-uk-sticky data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"> </i>
+				</span>
+	 	 		</section>
 
-	 	 <img class="uk-thumbnail-kay" src="<?php echo base_url('./favicon.ico') ?>" / >
-	 	 <img class="uk-thumbnail-kay-lb" src="<?php echo base_url('./public/img/banner-1.png') ?>" / >
-
-	 	 
-<form class="uk-container-max uk-width-1 uk-text-middle " >
+	 	 	
+		<form class="uk-container-max uk-width-1 uk-text-middle " data-uk-scrollspy="{cls:'uk-animation-fade'}">
   <fieldset class="uk-text-center"  name="menu">
 		
 	  
   <?php foreach($list as $li): ?> 
  
-<label class="item uk-width-9-10 uk-container-center uk-text-center uk-margin" data-uk-scrollspy="{cls:'uk-animation-fade'}" >
+<label class="item uk-width-9-10 uk-container-center uk-text-center uk-margin" data-uk-scrollspy="{cls:'uk-animation-fade'}">
 <input class="uk-width-1-10 uk-float-left" id="<?php echo $li['dishid'] ?>" type="checkbox" name="item"  value="<?php $li ?>" >
 		<legend hidden="hidden">
 			<span class="uk-close uk-float-left"></span>
@@ -63,9 +66,9 @@
   </fieldset>
 </form>
 
-
+		
   
-  <div id="menu-optclass" class="uk-offcanvas uk-text-bold">
+		<div id="menu-optclass" class="uk-offcanvas uk-text-bold">
     <div class="uk-offcanvas-bar uk-text-center " >
     	<div class="uk-panel">
     		 <h3 class="uk-panel-title">Menu</h3>
@@ -101,7 +104,7 @@
     </div>
   </div>
   	
-  	  	
+  	
   	
   	<div id="menu-print-modal" class="uk-modal uk-container-max uk-container-center">
   	  	
@@ -131,29 +134,6 @@
 		
 		
   	</div>  
-
-
-
-
-  <div  class="uk-width-1">
-		<footer id="footnav"  class="uk-navbar">
-		<ul class="uk-navbar-nav uk-width-1-2 uk-animation-slide-top" >
-          <li class="uk-width-1">
-          <a href="#" type="button"  class="uk-button" data-uk-offcanvas="{target:'#menu-optclass'}" >  
-						<i class=" uk-icon uk-icon-refresh uk-icon-medium"></i>  
-          </a>
-          </li>
-       </ul> 
-	 	
-	 	 <ul class="uk-navbar-nav uk-width-1-2 uk-animation-slide-top">
-				<li id="mdbtn"  class="uk-width-1 uk-button uk-text-right">
-				<a href="#" type="uk-button" class="uk-button">
-					<i id="modalbtn" class="uk-icon uk-icon-reply uk-icon-medium" ></i>
-				</a>
-				</li>
-		</ul>
-		</footer>
-  </div>
 
 
 
