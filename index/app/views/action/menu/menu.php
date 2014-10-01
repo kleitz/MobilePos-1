@@ -10,60 +10,57 @@
   </head>
   
   
-  <body class="uk-height-1-1 uk-text-center">
-		
-
-		<div class="uk-heading uk-width-1 uk-container-max uk-nbfc" data-uk-sticky>
-
+  <body class="uk-height-mini-1-1 uk-text-center">
+  <section id="selected" class="uk-nbfc uk-container-max uk-vertical-align" data-uk-scrollspy="{cls:'uk-animation-slide-top'}" data-uk-sticky>
+                    <div class="uk-vertical-align-bottom">
+					
+					<a  type="button" class="uk-text-left uk-align-left uk-icon-th-large uk-vertical-align-bottom uk-icon-small  " data-uk-offcanvas="{target:'#menu-optclass'}" > </a> 
+					<a  type="button" class="uk-text-right uk-align-right uk-vertical-align-bottom uk-icon-list-alt uk-icon-small" > </a>
+               
+                    </div>
+             <hr />
+    </section>
+    
+  
+        <div class="uk-nbfc-alt uk-heading uk-width-1 uk-container-max">
 		 	 
 		 	 	<nav id="headnav" class="uk-width-1">
 	 			<ul class="uk-icon">
           
 				
-						<blockquote class="uk-text-left"> 
+        <blockquote class="uk-text-left"> 
 
 										Hey Menu
 
-										<img class="uk-thumbnail-kay uk-text-center" src="<?php echo base_url('./favicon.ico') ?>" / >
-										<img class="uk-thumbnail-kay-lb" src="<?php echo base_url('./public/img/banner-1.png') ?>" / >
-							</blockquote>
+								<img class="uk-thumbnail-kay uk-text-center uk-margin" src="<?php echo base_url('./favicon.ico') ?>" / >
+                <img class="uk-thumbnail-kay-lb uk-text-center uk-margin" src="<?php echo base_url('./public/img/banner-1.png') ?>" / >
+        </blockquote>
 					
 	 			
 				</ul>
 	 	 	 </nav>
 	 	 	
-</div>
+               </div>
 
-	<section  class=" uk-float-right uk-text-center" data-uk-sticky="{top:250}" data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}">
-          
-				<span class="uk-badge">	
 
-					<i  class="uk-display-block uk-icon-th-large uk-icon-large uk-margin " data-uk-offcanvas="{target:'#menu-optclass'}" data-uk-sticky data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"> </i> 
-					<i  type="button" class="uk-display-block uk-icon-large uk-icon-list-alt uk-margin" data-uk-sticky data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: true}"> </i>
-				</span>
-	 	 		</section>
-
-	 	 	
-		<form class="uk-container-max uk-width-1 uk-text-middle " data-uk-scrollspy="{cls:'uk-animation-fade'}">
-  <fieldset class="uk-text-center"  name="menu">
-		
+<form id="untreated-form"  class="uk-container-max uk-width-1 uk-vertical-align" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+  
+		 
 	  
   <?php foreach($list as $li): ?> 
- 
-<label class="item uk-width-9-10 uk-container-center uk-text-center uk-margin" data-uk-scrollspy="{cls:'uk-animation-fade'}">
-<input class="uk-width-1-10 uk-float-left" id="<?php echo $li['dishid'] ?>" type="checkbox" name="item"  value="<?php $li ?>" >
-		<legend hidden="hidden">
-			<span class="uk-close uk-float-left"></span>
-			<a class="uk-float-right"><var class="sl uk-text-primary uk-badge uk-icon-cutlery">1</var></a>
-		</legend>	
-		<a class="uk-text-right"><?php echo $li['cm'] ?></a>				  
-		<small><var class="uk-text-center uk-icon-jpy uk-width-1-5 uk-badge-price uk-float-right" ><?php echo $li['jg'] ?></var></small>
-</label>
-  	
+
+<fieldset class="item uk-container-max uk-text-justify uk-margin"  form="order-manu" name="ordermenu">
+<input class="uk-float-right uk-text-center" id="<?php echo $li['dishid'] ?>" type="checkbox" name="item" >
+		<div class="uk-hidden">
+		<a class="uk-close uk-close-alt"></a>
+        <a class="sl uk-badge uk-text-right uk-float-right"><var class="uk-text-primary uk-icon-cutlery">1</var></a>
+		</div>	
+		<a class="uk-text-center uk-align-center"><?php echo $li['cm'] ?></a>				  
+		<a class="uk-text-center uk-icon-jpy  uk-badge-price uk-align-center" ><var><?php echo $li['jg'] ?></var></a>
+
+</fieldset>	
       
       <?php endforeach ?>
-      
-  </fieldset>
 </form>
 
 		
@@ -121,12 +118,8 @@
 	    
 			</nav>
 	    
-	       	    <form class="uk-form uk-container-max uk-animation-scale-down uk-overflow-container"> 	
-					 			<fieldset id="print-form" class="uk-text-center"  name="menu">
-						 				<p> asdnasdaa</p>
-
-    		
-					 			</fieldset>
+	       	    <form id="print-form" name="order-menu" class="uk-form uk-container-max uk-animation-scale-down uk-overflow-container"> 	
+					 			
 	        	</form>
 	        
 	       	        

@@ -32,26 +32,40 @@ color: #363636;
 
 
 
-.uk-badge-price{
+.uk-badge-price, .uk-badge-price var{
 	
 	box-shadow: 0px 1px 1px 0px rgba(142,142,142,0.3);	
 	border-radius: 9px;
-	background: rgba(68,68,68,0.8);
-	color: rgba(188,188,188,0.96);
-	padding-top:3px; 
+	background: rgba(88,88,88,1);
+	color: rgba(238,238,238,0.96);
+	padding:5px; 
+	width:100px;
 	
+}
+
+a.uk-icon-jpy
+{
+color: rgb(238,238,238);
+
 }
 
 /* 价格标签 */
 
+a.uk-close.uk-close-alt{
+    
+    color: red;
+    
+    
+}
 
 
-
-fieldset.uk-text-center
+fieldset.customfield
 {
 list-style: none;
-box-shadow: inset 1px 1px 10px rgba(205,205,205,0.61);
-padding-top: 35px;
+box-shadow: inset 0px 1px 20px rgba(255,255,255,0.3);
+padding:10px;
+padding-left: 20px;
+
 
 }
 /* 表单自定义字段 */
@@ -60,25 +74,30 @@ padding-top: 35px;
 hr
 {
 margin: 10px 0px;
-box-shadow: 0 1px 1px rgba(255,255,255,1);
+box-shadow: 0px 1px 1px 1px rgba(105,255,255,1);
 background: #fff;
 color: #fff;
 
 }
 
-
+#untreated-form
+{
+margin-top: 12px;
+}
 div.uk-heading
 {
 
 
-box-shadow:  0px 4px 10px rgba(145,145,145,1);
-background: rgba(288,288,288,1);
+box-shadow:  0px 1px 10px 1px rgba(145,145,145,0.1);
+background: rgba(253,253,253,1);
 color: #383838;
 font-family: cursive;
 font-weight: bold;
-display: inline-block;
-width:100%;
-margin-left: 3px;
+display: block;
+z-index: 0;
+
+
+
 
 }
 
@@ -90,14 +109,13 @@ display:inline;
 font-family: cursive;
 font-weight: bold;
 z-index: inherit;
-height:39px;
-padding:5px 16px;
-margin:0;
+padding-left: 5;
+
 }
 
 nav#headnav{
 display: inline-table;
-padding:5px 0;
+padding:15px 0;
 overflow-y: -webkit-marquee;
 
 }
@@ -106,7 +124,8 @@ overflow-y: -webkit-marquee;
 
 img.uk-thumbnail-kay
 {
-width:50px;
+width:60px;
+
 
 
 }
@@ -117,13 +136,35 @@ width: 110px;
 
 }
 
-section.uk-float-right.uk-text-center ,i
+#selected
 {
 
-padding-bottom: 30px;
-margin: 30px 1px;
-z-index:1;
+background: rgba(97,97,97,1);
+display: inline-block;
 }
+
+
+section#selected,section#selected a
+{
+
+color: #2389a0;
+z-index:1;
+
+}
+
+
+
+#selected a
+{
+    text-align: center;
+    margin:0 65px;
+    margin-top: 10px;
+    color: #fff;
+
+}
+
+
+
 
 
 
