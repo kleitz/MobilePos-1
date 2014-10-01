@@ -14,8 +14,8 @@
   <section id="selected" class="uk-nbfc uk-container-max uk-vertical-align" data-uk-scrollspy="{cls:'uk-animation-slide-top'}" data-uk-sticky>
                     <div class="uk-vertical-align-bottom">
 					
-					<a  type="button" class="uk-text-left uk-align-left uk-icon-th-large uk-vertical-align-bottom uk-icon-small  " data-uk-offcanvas="{target:'#menu-optclass'}" > </a> 
-					<a  type="button" class="uk-text-right uk-align-right uk-vertical-align-bottom uk-icon-list-alt uk-icon-small" > </a>
+					<a  type="button" class="uk-text-left uk-align-left uk-icon-th-large uk-vertical-align-bottom uk-icon-large  " data-uk-offcanvas="{target:'#menu-optclass'}" > </a> 
+					<a  id="targetm" type="button" class="uk-text-right uk-align-right uk-vertical-align-bottom uk-icon-list-alt uk-icon-large " > </a>
                
                     </div>
              <hr />
@@ -103,12 +103,10 @@
   	
   	
   	
-  	<div id="menu-print-modal" class="uk-modal uk-container-max uk-container-center">
+  	<div id="menu-modal" class="uk-modal uk-container-max uk-container-center">
   	  	
-	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless" >
-	    
-	    
-	    <nav class="uk-text-center uk-container-max uk-animation-fade">
+  	  	
+  	  	<nav class="uk-text-center uk-container-max uk-animation-fade">
 
 	    <a  class=" uk-button  uk-width-1-2 uk-float-left uk-animation-silde-left uk-text-left" >
 						<i class="uk-width-1 uk-icon-times  uk-modal-close"></i></a>
@@ -116,11 +114,15 @@
 	    <a  class=" uk-button uk-width-1-2 uk-float-right uk-animation-silde-right uk-text-right uk-text-success">
 						<i class="uk-width-1 uk-icon-check-square-o uk-text-success"></i></a>
 	    
-			</nav>
+        </nav>
+  	  	
+	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless" >
 	    
-	       	    <form id="print-form" name="order-menu" class="uk-form uk-container-max uk-animation-scale-down uk-overflow-container"> 	
-					 			
-	        	</form>
+	    
+	    
+	    <div id="print-form" name="order-menu" class="uk-form uk-container-max uk-animation-scale-down uk-overflow-container"> 	
+					 	
+        </div>
 	        
 	       	        
 		</div>
