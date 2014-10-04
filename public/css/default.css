@@ -1,42 +1,15 @@
 
-
-html
-{
-	font-family: Arial,  "微软雅黑";
-	text-indent: 2px;
+body{
 	
-
-}
-
-
-body 
-{
-
-background: rgba(253,253,253,1);
-
-}
-
-div.uk-heading
-{
-
-width: 100%;
-z-index: 1;
-}
-
-
-
-a:hover
-{
-
-	
-	text-decoration:none;
-	color: #0096a6;
+	background: rgba(238,238,238,1);
 	
 }
 
-
-li 
-
-{ 
-list-style-type: none; 
-} 
+.uk-badge{
+	
+	border: 1px solid rgba(219,219,219,0.64);
+	border-radius: 90px;
+	background: rgba(225,225,225,0.74);
+	color: #454545;
+	padding: 5px;
+}
