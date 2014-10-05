@@ -19,24 +19,77 @@ padding-bottom: 15px;
 }
 
 
-
-
 li.menu-item
 
 {
 	
-	box-shadow: 1px 1px 4px rgba(153,153,153,0.63);
-	margin-bottom: 10px;
+	box-shadow: 0px 1px 4px rgba(153,153,153,0.33);
 	border-radius: 8px;
-	background: rgba(242,242,242,0.13);
-	margin-top: 10px;
 	border: 1px solid rgba(225,225,225,0.31);
-	font-family: 'yahei';
 	font-weight: bold;
 	font-size: 17px;
 	color:#7f7f7f;
-	text-align: center;
-	padding:10px;
+	width:100%;
+	display: block;
+    max-height:90px; 
+    padding: 0;
+    
+}
+
+li.menu-item > div,div>blockquote
+{
+
+
+width: 85%;
+border-color: #159098;
+font-style: normal;
+text-align: center;
+padding-left:10%;
+
+
+
+}
+
+
+li.menu-item>div>button.clearitem
+{
+color:red;
+float: left;
+position: absolute;
+left:-15px;
+display: none;
+}
+
+li.menu-item.suc>div>button.clearitem
+{
+
+display: block;
+}
+
+
+var.sl,var.jg{
+float: right;
+color:#5a8f33;
+display: none;
+
+}
+
+li.suc.item var.sl,li.suc.item var.jg{
+
+display: block;
+
+}
+
+
+
+var.sl>input{
+
+width:30px;
+text-align: center;
+height: 20px;
+border:none;
+background: rgba(218,218,218,1);
+
 
 }
 
@@ -55,12 +108,9 @@ li.uk-li-success.menu-item
 }
 
 
-span.clearItem
-{
-padding-top: 6px;
 
 
-}
+
 
 
 

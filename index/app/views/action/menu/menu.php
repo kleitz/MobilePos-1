@@ -25,24 +25,26 @@
   
 
  	<div class="uk-width-1 uk-container uk-container-center">  
-  <ul class="uk-width-1 uk-list uk-list-space uk-grid uk-grid-preserve uk-container uk-container-center uk-animation-scale-up">
-	  
-  <?php foreach($list as $li): ?>  
-  
-  
-  	 <span class="clearitem uk-icon uk-icon-minus-circle uk-icon-medium" style="display:none"></span>
-  	 <span class="uk-icon uk-icon-cutlery uk-float-right" style="display:none"><val class="sl"><b class="uk-text-primary">1</b></val></span>		 
-      <li class="menu-item uk-width-1 uk-grid uk-grid-preserve uk-text-bottom" value="<?php echo $li['dishid'] ?>">  		  	
-	  	<val class="cm uk-width-2-3 uk-text-left"  ><?php echo $li['cm'] ?></val></p>
-	  	<val class="uk-width-1-3 uk-width-medium-1-10 jg uk-icon-jpy uk-badge"><?php echo $li['jg'] ?></val>	
-	   </li>
-  
-      
+      <ul id="unselect-ul" class="uk-width-1 uk-list uk-list-space uk-grid uk-grid-preserve uk-container uk-container-center uk-animation-scale-up">
+    	  
+      <?php foreach($list as $li): ?>  
+        <li class="menu-item" id="<?php echo $li['dishid'] ?>"> 
+        <div>  
+        <button class="clearitem uk-icon uk-icon-minus-circle uk-button"></button>   
+        <var class="sl uk-icon uk-icon-cutlery">
+        <input value="1" />
+        </var>	 	
+	  	<blockquote>
+	  	<var class="cm"><?php echo $li['cm'] ?></var>
+	  	<var class="jg uk-icon-jpy uk-badge"><?php echo $li['jg'] ?>/1份</var>
+	  	</blockquote>
+        </div>
+        </li>  
       <?php endforeach ?>
+          
+      </ul>
       
-  </ul>
-  
-</div>
+    </div>
   
   	<div id="menu-optclass" class="uk-offcanvas uk-text-bold">
     <div class="uk-offcanvas-bar uk-text-center " >
@@ -88,11 +90,12 @@
 	        <a class="uk-modal-close uk-close uk-close-alt"></a>
 	        <h2 class="uk-text-bold uk-text-center">清单预览</h2>
 	        <div class="uk-overflow-container">
-	        	<table class="uk-table uk-width-1 uk-container-center">
-	        		
-	        
-	        	</table>
-	        </div>
+	        	
+	        		  <ul id="modal-ul">  
+	        		  
+	        		  </ul>
+	        			        
+            </div>
 		</div>
   	</div>  
   	  
