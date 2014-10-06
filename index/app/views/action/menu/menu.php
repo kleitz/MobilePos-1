@@ -31,12 +31,12 @@
         <li class="menu-item" id="<?php echo $li['dishid'] ?>"> 
         <div>  
         <button class="clearitem uk-icon uk-icon-minus-circle uk-button"></button>   
-        <var class="sl uk-icon uk-icon-cutlery">
-        <input value="1" />
+        <var class="sl uk-icon-cutlery">
+        <b>1</b>
         </var>	 	
 	  	<blockquote>
 	  	<var class="cm"><?php echo $li['cm'] ?></var>
-	  	<var class="jg uk-icon-jpy uk-badge"><?php echo $li['jg'] ?>/1份</var>
+	  	<var class="jg uk-icon-jpy"><?php echo $li['jg'] ?></var>
 	  	</blockquote>
         </div>
         </li>  
@@ -91,7 +91,7 @@
 	        <h2 class="uk-text-bold uk-text-center">清单预览</h2>
 	        <div class="uk-overflow-container">
 	        	
-	        		  <ul id="modal-ul">  
+	        		  <ul id="modal-ul" class="uk-width-1 uk-list uk-list-space uk-grid uk-grid-preserve uk-container uk-container-center uk-animation-scale-up">  
 	        		  
 	        		  </ul>
 	        			        
