@@ -28,7 +28,7 @@ $('Document').ready(function(e){
                         return ++sl;
                    });
                      
-                   
+                //判断触发节点
                     if($(e.target).is('button.clearitem'))
                     appenditem(init,'suc','#unselect-ul');
            
@@ -41,13 +41,14 @@ $('Document').ready(function(e){
                 
         });
         
-        var arr = $('li.menu-item.suc');
+        
         		
 		
 		$("#modalbtn").on('click',function(e){
 		    var arr = $('li.menu-item.suc');
 		    var modal = $.UIkit.modal("#menu-print-modal");
-    		if(arr.length===0){
+		    modal.options.bgclose = false;
+                		if(arr.length===0){
         		
         		$.UIkit.notify({
                     message : 'ERROR ! :( 没点任何菜 !',
