@@ -4,7 +4,6 @@
     <meta charset='utf-8' />
     <link rel="stylesheet" href="<?php echo  base_url('public/css/action.menu.css');?>" />
 	<link rel="stylesheet" href="<?php echo  base_url('public/css/addons/uikit.addons.min.css');?>" />
-
 	<script src="<?php echo base_url('public/js/action.menu.js') ?>"></script>
 	<script src="<?php echo base_url('public/js/addons/notify.min.js') ?>"></script>
 	<script src="<?php echo base_url('public/js/addons/sticky.min.js') ?>"></script>
@@ -29,15 +28,19 @@
     	  
       <?php foreach($list as $li): ?>  
         <li class="menu-item" id="<?php echo $li['dishid'] ?>"> 
-        <div>  
-        <button class="clearitem uk-icon uk-icon-minus-circle uk-button"></button>   
-        <var class="sl uk-icon-cutlery">
-        <b>1</b>
-        </var>	 	
+        <button class="clearitem uk-icon uk-icon-minus-circle uk-button"></button>
+        <div>          	 	
 	  	<blockquote>
 	  	<var class="cm"><?php echo $li['cm'] ?></var>
-	  	<var class="jg uk-icon-jpy"><?php echo $li['jg'] ?></var>
+	  	<var class="jg uk-badge">
+	  	<p class="uk-icon-jpy"><?php echo $li['jg'] ?>/份</p>
+	  	<var class="sl">
+        <b class="uk-icon-cutlery">1</b>
+        </var>
+        </var>
 	  	</blockquote>
+
+	  	
         </div>
         </li>  
       <?php endforeach ?>
@@ -85,21 +88,36 @@
   	
   	
   	
-  	<div id="menu-print-modal" class="uk-modal uk-container uk-container-center uk-width-1">
+  	<div id="menu-print-modal" class="uk-modal  uk-container-center">
 	    <div class="uk-modal-dialog uk-modal-dialog-large uk-modal-dialog-frameless">
 	        <a class="uk-modal-close uk-close uk-close-alt"></a>
 	        <h2 class="uk-text-bold uk-text-center">清单预览</h2>
-	        <div class="uk-overflow-container">
+	        
 	        	
 	        		  <ul id="modal-ul" class="uk-width-1 uk-list uk-list-space uk-grid uk-grid-preserve uk-container uk-container-center uk-animation-scale-up">  
 	        		  
 	        		  </ul>
-	        			        
-            </div>
+                     <form class="uk-form">
+                        <label for="zh">
+                            桌号
+                        </label>
+                        <input name="zh" type="text" />
+                        <label for="rs">
+                            人数
+                        </label>
+                        <input name="rs" type="text" />
+                     
+                     </form>
+                      <div id="booking">
+                        <button  type="button" class="uk-button" base="<?php  print_r(base_url()); ?>">确认下单</button>
+                     </div>
+            
+            
 		</div>
   	</div>  
-  	  
+      	  
   </body>
+
   
   
 </html>
