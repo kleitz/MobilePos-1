@@ -49,10 +49,10 @@ class   Action extends CI_Controller {
 	       }
 
 	   
-	 	
-	 	static function setsees($stus){
+	 	private function setsees($stus,$menu){
 		 	
 		 // 检测当前 session 状态  , 如果为 true 	
+		 
 		 
 		 if( ! $stus ){
 		
@@ -102,27 +102,27 @@ class   Action extends CI_Controller {
 
 				     'hash'  => $HASH
 				);
-
-			$this->session->set_userdata($cmoo_id); 
-			
-			return $HASH;
+							
+		}else{ 
 		
-		}else{ return 1; }
+		    return 1;
+		
+		
+		 }
 		 	
 		 	
 		 	
 	 	}
 		
 
-
-	 		public function order(){
+         public function order(){
+		 	
+		 	
+		 	$menu = $_POST['item'];
+            $cmoo_id = self::setsees(false,$menu);
+		 	//$this->session->set_userdata($cmoo_id); 	
 		 		
-		 		$menu = $_POST;
-		 		var_dump($menu['data']);
-		 		
-		 		
-		 		
-	 		}
+        }
 
 
 
